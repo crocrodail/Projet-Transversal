@@ -17,7 +17,7 @@ class connection{
     }
     $pseudo = $data['pseudo'];
     $password = $data["password"];
-    $dbh = new PDO('mysql:host='.bdd()["db"]["host"].';dbname='.bdd()["db"]["dbname"].'', bdd()["db"]["username"], bdd()["db"]["password"]);
+    $dbh = new PDO('mysql:host='.bdd()["host"].';dbname='.bdd()["dbname"].'', bdd()["username"], bdd()["password"]);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $dbh->prepare("SELECT password FROM users WHERE pseudo=:pseudo");
     $stmt->execute(["pseudo" => $pseudo]);
