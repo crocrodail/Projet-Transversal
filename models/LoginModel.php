@@ -8,6 +8,7 @@ class connection{
   var $email;
 
   function verifyConnection($data){
+    require_once('config/secret.php');
     if (isset($data['pseudo']) == false) {
         return "false";
     }
@@ -16,7 +17,7 @@ class connection{
     }
     $pseudo = $data['pseudo'];
     $password = $data["password"];
-    $dbh = new PDO('mysql:host=wr48466-001.dbaas.ovh.net:35458;dbname=Projet_transversal', 'invite', 'I2rQ9Bh2gzaD6t');
+    $dbh = new PDO('mysql:host='.bdd()["db"]["host"].';dbname='.bdd()["db"]["dbname"].'', bdd()["db"]["username"], bdd()["db"]["password"]);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $dbh->prepare("SELECT password FROM users WHERE pseudo=:pseudo");
     $stmt->execute(["pseudo" => $pseudo]);

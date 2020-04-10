@@ -30,6 +30,7 @@ class userRegister{
 
     if($error == false){
       try {
+        require_once('config/secret.php');
 
         $pseudo = $data["pseudo"];
         $last_name = $data["last_name"];
@@ -37,9 +38,9 @@ class userRegister{
         $mail = $data["email"];
         $birthday = $data["birthday"];
         $password = password_hash($data["password"], PASSWORD_DEFAULT);
-        $dbco = new PDO('mysql:host=wr48466-001.dbaas.ovh.net:35458;dbname=Projet_transversal', 'invite', 'I2rQ9Bh2gzaD6t');
-        $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sth = $dbco->prepare("
+        $dbh = new PDO('mysql:host='.bdd()["host"].';dbname='.bdd()["dbname"], bdd()["username"], bdd()["password"]);
+        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sth = $dbh->prepare("
             INSERT INTO users(pseudo, first_name, last_name, email, birthday, password)
             VALUES(:pseudo, :first_name, :last_name, :email, :birthday, :password)");
         $sth->bindParam(':pseudo', $pseudo);

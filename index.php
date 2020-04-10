@@ -19,7 +19,10 @@ $action = $action ?? "index";
 
 // on récupère les paramètres
 $parameters = $_GET;
+require_once('config/secret.php');
 require_once('models/RegisterModel.php');
+
+
 
 if($controller == "users"){
   require_once("controllers/UsersController.php");
