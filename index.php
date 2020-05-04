@@ -25,5 +25,5 @@ require_once('models/RegisterModel.php');
 
 
 if($controller == "users"){
-  require_once("controllers/UsersController.php");
+  require_once("controllers/UserController.php");
 }
