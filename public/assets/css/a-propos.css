@@ -92,12 +92,12 @@ header .content ul li a{
 }
 
 .langue{
-    margin-left:1.5vw;
     margin-top:250px;
-    background-image:url("");
-    height:40vw;
+    background-image:url("../img/a propos/Fichier_1.svg");
+    height:100vw;
     width:100vw;
-    background-size:contain;background-repeat:no-repeat}
+    background-size:cover;
+    background-repeat:no-repeat}
     
 .langue .content{
     display:block;
@@ -106,9 +106,10 @@ header .content ul li a{
 }
 
     .langue .content h1{
-        padding-top:5vw;
+        padding-top:20vw;
         color:#25446E;
-        font-size:3vw}
+        font-size:3vw;
+    }
     
     .langue .content ul{
         padding:0;
