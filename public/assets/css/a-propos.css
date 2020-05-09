@@ -78,7 +78,7 @@ header .content ul li a{
     font-size:1.4vw;
     margin-top:3vw;
     font-weight: bold;
-    width:40vw
+    width:40vw;
 }
 
 .concept .content h1{
@@ -88,13 +88,12 @@ header .content ul li a{
 .concept .content p{
     white-space:pre-line;
     color: #25446E;
-    
 }
 
 .langue{
     margin-top:250px;
-    background-image:url("../img/a propos/Fichier_1.svg");
-    height:100vw;
+    background-image:url("../img/a propos/background.svg");
+    height:60vw;
     width:100vw;
     background-size:cover;
     background-repeat:no-repeat}
@@ -106,7 +105,7 @@ header .content ul li a{
 }
 
     .langue .content h1{
-        padding-top:20vw;
+        padding-top:8vw;
         color:#25446E;
         font-size:3vw;
     }
@@ -123,6 +122,7 @@ header .content ul li a{
         font-size:1.5vw;
         width:100vw;
         color:#25446E;
+        font-weight: bold;
     }
         
     .langue .content ul img{
@@ -150,7 +150,7 @@ header .content ul li a{
             
         .signes .content img{
             margin-left:10vw;
-            margin-top:8vw;
+            margin-top:2vw;
             width:27vw;
         }
         
@@ -160,7 +160,7 @@ header .content ul li a{
         }
         
         .signes .content .text{
-            margin-top:8vw;
+            margin-top:2vw;
             width:50vw;
             text-align:center;
             font-size:1.5vw;
