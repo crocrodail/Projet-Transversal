@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1312.793" height="656.334" viewBox="0 0 1312.793 656.334">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1438.108" height="615.231" viewBox="0 0 1438.108 615.231">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#66e0f8"/>
       <stop offset="1" stop-color="#4ac3db"/>
     </linearGradient>
   </defs>
-  <path id="Tracé_1065" data-name="Tracé 1065" d="M167.51,62.271H1045.49c92.513,0,219.908,72.444,218.945,278.286S1138,632.394,1045.49,632.394l53.073,86.211L871.317,632.394H167.51C75,632.394-50.919,553.621-48.312,351.84S75,62.271,167.51,62.271Z" transform="translate(48.352 -62.271)" fill="url(#linear-gradient)"/>
+  <path id="Tracé_1065" data-name="Tracé 1065" d="M188.115,62.271H1149.9c101.344,0,240.9,67.907,239.845,260.858S1251.249,596.69,1149.9,596.69l58.139,80.812L959.106,596.69H188.115c-101.344,0-239.279-73.84-236.424-262.984S86.771,62.271,188.115,62.271Z" transform="translate(48.352 -62.271)" fill="url(#linear-gradient)"/>
 </svg>

@@ -3,16 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a660170305.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/home.min.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/home.min.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/home.tablet.min.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/home.mobile.min.css">
+    <link rel="stylesheet" href="assets/css/header_footer.min.css">
   </head>
   <body>
 
     <header>
-      <input type="checkbox">
+      <button class="lang-tab" type="button">Français&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></button>
+
       <div class="content">
-        <img src="assets/img/home/logo.svg" alt="logo">
+        <input type="checkbox">
+        <img src="assets/img/header_footer/logo.svg" alt="logo">
         <ul>
           <li><a href="#">Traducteurs</a></li>
           <li><a href="#">À propos</a></li>
@@ -24,7 +30,6 @@
     </header>
 
     <div class="landing">
-
       <img src="assets/img/home/landing.svg" alt="info">
       <div class="content">
         <p>
@@ -38,6 +43,7 @@
         </p>
         <button class="play" type="button" name="button"></button>
       </div>
+      <img id="maskot" src="assets/img/home/maskot.svg" alt="maskot">
 
     </div>
 
@@ -74,13 +80,10 @@
         <div class="text">
 
           <p>En apprendre plus avec Quizz’in</p>
-            <p>Quizz'in est un jeu qui permet
-            d'affronter vos amis et des personnes
-            du monde entier. Vous aurez aussi la
-            possibilité d'échanger avec eux
-            à travers une messagerie, il y aura aussi
-            un système de classement pour voir
-            qui est le meilleur sur Quizz'in.
+            <p><span>Quizz'in</span> est un jeu qui permet <span>d'affronter vos
+              amis et des personnes du monde entier.</span> Il y
+              aura aussi un système de <span>classement</span> pour voir
+              qui est le <span>meilleur</span> sur <span>Quizz'in.</span>
           </p>
           <p>Téléchargez notre application</p>
           <button><i class="fab fa-google-play"></i>&nbsp;&nbsp;Google play</button>
@@ -96,7 +99,7 @@
 
       <h2>Nous contacter</h2>
       <form>
-        <img src="" alt="">
+        <img src="assets/img/home/form_maskot.svg" alt="maskot">
         <input type="email" name="email" placeholder="Votre email">
         <textarea name="msg" placeholder="Votre message"></textarea>
         <input type="submit" value="Envoyer">
@@ -125,7 +128,7 @@
           <ul>
             <li>Vous aider</li>
             <li> <a href="#">Nous contacter</a> </li>
-            <li> <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+            <li> <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#"><i class="fab fa-twitter"></i></a> </li>
           </ul>
         </li>
       </ul>
