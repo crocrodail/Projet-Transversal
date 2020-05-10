@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a660170305.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/traducteur.min.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/traducteur.tablet.min.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/traducteur.mobile.min.css">
     <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/home.min.css">
     <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/home.tablet.min.css">
     <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/home.mobile.min.css">
@@ -30,7 +33,48 @@
     </header>
 
     <div class="landing">
-      <img src="assets/img/home/landing.svg" alt="info">
+      <div class="traducteur">
+        <p id="de">Traduire de &nbsp;
+          <select id="in" class="" name="">
+            <option value="">Détection</option>
+            <option value="français">Français</option>
+            <option value="Anglais">Anglais</option>
+            <option value="Chinois">Chinois</option>
+            <option value="Espagnol">Espagnol</option>
+            <option value="Portugais">Portugais</option>
+            <option value="Italien">Italien</option>
+            <option value="Allemand">Allemand</option>
+            <option value="Ruse">Ruse</option>
+            <option value="Arabe">Arabe</option>
+            <option value="Japonais">Japonais</option>
+          </select><i class="fas fa-chevron-down"></i>
+        </p>
+
+        <p id="en">Traduire en &nbsp;
+          <select id="out" class="" name="">
+            <option value="français">Français</option>
+            <option value="Anglais">Anglais</option>
+            <option value="Chinois">Chinois</option>
+            <option value="Espagnol">Espagnol</option>
+            <option value="Portugais">Portugais</option>
+            <option value="Italien">Italien</option>
+            <option value="Allemand">Allemand</option>
+            <option value="Ruse">Ruse</option>
+            <option value="Arabe">Arabe</option>
+            <option value="Japonais">Japonais</option>
+            <option value="langue des signes">Japonais</option>
+          </select><i class="fas fa-chevron-down"></i>
+        </p>
+
+        <textarea name="in" placeholder="Saisissez votre texte ou lien du site que vous voulez traduire. "></textarea>
+        <textarea name="out"readonly="readonly"></textarea>
+        <a href="#">Signaler</a>
+        <button>Traduire</button>
+        <div id='listenIN'></div>
+        <div id='listenOUT'></div>
+        <div id='useMic'></div>
+        <div id='fav'></div>
+      </div>
       <div class="content">
         <p>
           <span class="blue">Spik’in</span> est <span>un service de
