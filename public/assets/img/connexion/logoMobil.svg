@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105.332" height="98.779" viewBox="0 0 105.332 98.779">
+  <g id="Groupe_1411" data-name="Groupe 1411" transform="translate(-11.896 -32)">
+    <path id="Tracé_1066" data-name="Tracé 1066" d="M61.152,78.478V45.317a28.863,28.863,0,0,0-13.163-24.6A24.676,24.676,0,0,0,37.7,18.473L15.712,14.155,0,0S5.452,29.784,5.452,43.738V87.42c3.4,1.742,7.329-.947,7.329-4.994v-22.9a3.051,3.051,0,0,1,2.932-3.158V98.162c3.876,2.411,8.795-.587,8.795-5.472V59.529a3.051,3.051,0,0,1,2.932-3.158c.018,0,0-.982,0,48.107,3.912,2.433,8.795-.624,8.795-5.471V59.529a3.051,3.051,0,0,1,2.932-3.158V101.32c3.876,2.411,8.795-.587,8.795-5.472V57.374C38.157,52.2,31.859,41.4,31.836,29.59a1.577,1.577,0,0,1,1.375-1.639,1.517,1.517,0,0,1,1.557,1.576A28.122,28.122,0,0,0,50.032,54.934a1.588,1.588,0,0,1,.859,1.437V78.318a9.885,9.885,0,0,0,7.329,3.318A3.049,3.049,0,0,0,61.152,78.478Z" transform="translate(11.896 93.152) rotate(-90)" fill="#5bd4ed"/>
+    <g id="Groupe_917" data-name="Groupe 917" transform="translate(42.405 103.06)">
+      <g id="Groupe_460" data-name="Groupe 460" transform="translate(20.182 7.456)">
+        <g id="Groupe_461" data-name="Groupe 461" transform="translate(7.5)">
+          <path id="Tracé_87-2" data-name="Tracé 87-2" d="M1229.693,674.507s-.03,2.567.218,5.986a25.094,25.094,0,0,0,.958,6,14.373,14.373,0,0,0,6.3,6.936" transform="translate(-1229.692 -674.507)" fill="none" stroke="#5cd6ef" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <g id="Groupe_462" data-name="Groupe 462">
+          <path id="Tracé_88-2" data-name="Tracé 88-2" d="M1177.217,674.507s.03,2.567-.219,5.986a24.933,24.933,0,0,1-.956,6,14.378,14.378,0,0,1-6.3,6.936" transform="translate(-1169.739 -674.507)" fill="none" stroke="#5cd6ef" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <g id="Groupe_463" data-name="Groupe 463" transform="translate(0.964 6.991)">
+          <path id="Tracé_89-2" data-name="Tracé 89-2" d="M1177.442,730.387h13.012" transform="translate(-1177.442 -730.387)" fill="none" stroke="#5cd6ef" stroke-linecap="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Groupe_464" data-name="Groupe 464" transform="translate(0 0)">
+        <path id="Tracé_329-2" data-name="Tracé 329-2" d="M1008.412,625.916l8.367-19.542,8.658,19.542" transform="translate(-1008.412 -606.374)" fill="none" stroke="#5cd6ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Ligne_29" data-name="Ligne 29" y1="0.053" x2="8.983" transform="translate(3.941 10.285)" fill="none" stroke="#5cd6ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

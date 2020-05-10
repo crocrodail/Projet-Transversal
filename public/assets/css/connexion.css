@@ -36,7 +36,7 @@ h2 {
     width: 90%;
     height: 3vw;
     border: #4AC3DB 2px solid;
-    border-radius: 15px;
+    border-radius: 10px;
     padding-left: 1.5vw;
     font-size: 1.5vw;
     font-family: Poppins
@@ -46,7 +46,7 @@ h2 {
     width: 90%;
     height: 3vw;
     border: #4AC3DB 2px solid;
-    border-radius: 15px;
+    border-radius: 10px;
     padding-left: 1.5vw;
     font-size: 1.5vw;
     font-family: Poppins
@@ -60,7 +60,6 @@ h2 {
     font-size: 1.2vw;
     font-weight: bold;
     color: white;
-    text-transform: uppercase;
     margin-top: 3vw;
     
 }
@@ -85,5 +84,107 @@ h2 {
 
 .container img{
     margin-top: 3vw;
-    width: 100%;
+    width: 28vw;
+}
+.logo{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    h2{
+        font-size: 4vw;
+    }
+    .container{
+        width: 100%;
+    }
+    .contact p{
+        margin-bottom: 0;
+        font-family: Poppins;
+        color: #f28206;
+        font-size: 2vw;
+    }
+    
+    .contact a{
+        color: #f28206;
+        font-size: 2vw;
+        margin-right: 2vw;
+    }
+    .contact form input[type="submit"] {
+        font-size: 2vw;
+    }
+    .container img{
+        margin-top: 3vw;
+        width: 35vw;
+    }
+    .contact form{
+        width: 90%;
+    }
+    .contact form input[type="password"] {
+        font-size: 2vw;
+    }
+    .contact form input[type="email"] {
+        font-size: 2vw;
+    }
+
+}
+
+@media (max-width: 640px) {
+    footer{
+        display: none;
+    }
+    .container img{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .contact form{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact p{
+        margin-bottom: 0;
+        font-family: Poppins;
+        color: #f28206;
+        font-size: 4vw;
+    }
+    
+    .contact a{
+        color: #f28206;
+        font-size: 3vw;
+        margin-right: 2vw;
+    }
+    .contact form input[type="submit"] {
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
+    .container img{
+        margin-top: 3vw;
+        width: 35vw;
+    }
+    .contact form{
+        width: 80%;
+    }
+    .contact form input[type="password"] {
+        font-size: 4vw;
+        height: 6vw;
+    }
+    .contact form input[type="email"] {
+        font-size: 4vw;
+        height: 6vw;
+    }
+    .logo{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 25vw;
+        margin-top: 15vw;
+    }
 }
