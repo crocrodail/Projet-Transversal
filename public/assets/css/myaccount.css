@@ -49,26 +49,68 @@ body {
     background-color: #f28206
 }
 
-.contact p{
-    margin-bottom: 0;
-    font-family: Poppins;
-    color: #f28206;
-    font-size: 1.2vw;
-}
-
-.contact a{
-    color: #f28206;
-    font-size: 1.2vw;
-    margin-right: 2vw;
-}
 
 .container img{
     margin-top: 5vw;
-    width: 100%;
+    width: 18vw;
 }
-@media (max-width: 1440px) {
-    .container img{
-        margin-top: 5vw;
-        width: 80%;
+
+
+@media (max-width: 1024px) {
+    .contact h2{
+        font-size: 3vw;
     }
+    .contact form input[type="submit"] {
+        width: 100%;
+        font-size: 2vw;
+    }
+    .contact{
+        margin-right: 10vw;
+    }
+    .container img{
+        width: 20vw;
+    }
+}
+
+
+
+
+
+@media (max-width: 640px) {
+
+    .contact h2{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .contact form input[type="submit"] {
+        width: 90%;
+        font-size: 5vw;
+        padding: 4vw 4.4vw;
+    }
+    .contact{
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    .contact form{
+        margin-right: auto;
+        margin-left: auto;
+        width: 95%;
+        text-align: center;
+    }
+    .container img{
+        width: 35vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    footer{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+
 }
