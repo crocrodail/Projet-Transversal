@@ -1,0 +1,225 @@
+html,body{
+    font-family:Poppins;
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+}
+
+
+.jeu h1{
+color: #FFAF56;
+text-align: center;
+font-size: 2vw;
+font-weight: 900;
+}
+.jeu img{
+    width: 11vw;
+}
+.jeu button{
+    background-color: #FDAE33;
+    color: white;
+    border-style: none;
+    width: 12vw;
+    height: 4vw;
+    font-size: 2.5vw;
+    border-radius: 0.2vw;
+    margin: auto;
+    font-weight: bold;
+    margin-left: 43.5vw;
+}
+.jeu .content2 {
+    display: flex;
+    margin-left: 30vw;
+}
+
+.jeu .content2 p{
+    margin-top: 5vw;
+    margin-left: 3vw;
+    background-image: url(../img/info-quizz/bulle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 14vw;
+    font-size: 1.17vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 2vw;
+    padding-left: 12vw;
+    padding-right: 3vw;
+}
+.jeu .content2 p .titre{
+    font-weight: bold;
+    color: white;
+    font-size: 1.5vw;
+}
+
+
+.services{
+    margin-top: 250px;
+    background-image: url(../img/info-quizz/background.svg);
+    height: 47vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+.services .content{
+    display:block;
+    text-align:center;
+    margin:auto;
+}
+.services .content ul{
+    padding:0;
+    text-align:center;
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
+    margin:auto;
+    width:70%}
+
+    .services .content ul img{
+        width: 10vw;
+    }
+    .services .content ul .main1{
+        width: 6vw;
+        position: absolute;
+        margin-top: 14vw;
+        margin-left: -3vw;
+    }
+    .services .content ul .main2{
+        width: 6vw;
+        position: absolute;
+        margin-top: 13vw;
+        right: 30vw;
+    }
+
+    .services .content p{
+        font-size: 2vw;
+        margin-bottom: 8vw;
+        font-weight: bold;
+        color: #25446E;
+        padding-top: 6vw;
+    }
+
+
+
+
+
+    .marche{
+        margin-left:1.5vw;
+}
+        
+    .marche .content{
+        display:block;
+        text-align:center;
+        margin:auto}
+        
+    .marche .content h1{
+        padding-top:5vw;
+        color:#25446E;
+        font-size:2vw}
+    
+    .marche .content ul{
+        padding:0;
+        text-align:center;
+        display:flex;
+        justify-content:space-around;
+        list-style:none;
+        margin:auto;
+        width:70%;
+    }
+        
+    .marche .content ul img{
+        padding-top:6vw;
+        width:10vw;
+        margin-bottom: 3vw;
+    }
+    .marche .content ul .main3{
+        width: 8vw;
+        position: absolute;
+        left: 23.5vw;
+        margin-top: -5.9vw;
+    
+    } 
+    .marche .content ul .main4{
+        width: 6vw;
+        position: absolute;
+        margin-top: 11.5vw;
+        margin-left: -15.5vw;
+    
+    } 
+    .marche .content ul .main5{
+        width: 4.5vw;
+        position: absolute;
+        margin-top: -5.4vw;
+        margin-left: -4.5vw;
+    } 
+    .marche .content ul p{
+        margin: 0;
+        color: #25446E;
+        font-size: 1vw;
+        width: 15vw;
+        font-weight: bold;
+    }
+
+
+
+.bulle{
+    margin: auto;
+    width:68.5vw;
+    display: block;
+    height: 35vw;
+
+}
+.bulle .content{
+    text-align: center;
+    background-image:url("../img/info-quizz/bulle2.svg");
+    background-repeat:no-repeat;
+    background-size: contain;
+    margin: auto;
+    margin-top: 8vw;
+    width:68.5vw;
+    display: block;
+    height: 35vw;
+}
+.bulle .content h1{
+    margin-top: 2vw;
+    color: white;
+    font-size: 2vw;
+    padding-top: 2vw;
+}
+.bulle .content p{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    width: 69vw;
+}
+
+.rejoindre{
+    margin-top: 8vw;
+}
+.rejoindre .content{
+    text-align: center;
+}
+.rejoindre .content h1{
+    color: #25446E;
+    font-size: 3vw;
+}
+.rejoindre .content p{
+    margin-top: 6vw;
+    color: #25446E;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-right: 12vw;
+    margin-left: 12vw;
+}
+.rejoindre .content p span{
+    color: #FFAF56;
+}
+.rejoindre .content .main6{
+    width: 12vw;
+    position: absolute;
+    margin-left: 16vw;
+    margin-top: -12vw;
+}
