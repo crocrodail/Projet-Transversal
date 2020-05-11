@@ -1,0 +1,54 @@
+html,
+body {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden
+}
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color: #FFAF56;
+}
+.traduction{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1vw;
+}
+.before, .after{
+    width: 23vw;
+    border-radius: 10px;
+}
+.before{
+    background-color: #5CD6EF;
+}
+.after{
+    background-color: #FDAE33;
+    position: relative;
+}
+.trad{
+    text-align: center;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: bold;
+    padding: 3%;
+}
+.langue{
+    width: 49%;
+    padding: 0;
+    color: #25446E;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+.date{
+    position: absolute;
+    left: 75%;
+    top: 100%;
+    font-size: 0.6vw;
+}
