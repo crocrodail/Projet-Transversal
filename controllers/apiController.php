@@ -45,7 +45,28 @@
       }
       break;
 
-
+    case 'classement':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/classementModel.php');
+        $classement = new classement();
+        $globalClassement = $classement->getClassement();
+        echo json_encode($globalClassement);
+      } 
+      break;
+    
+    case 'theme':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/themeModel.php');
+        $theme = new theme();
+        $allTheme = $theme->getTheme();
+        echo json_encode($allTheme);
+      } 
+      break;
+      
 
 
     default:
