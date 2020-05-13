@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="889.221" height="587.533" viewBox="0 0 889.221 587.533">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.689" y1="0.909" x2="0.081" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fed547"/>
+      <stop offset="1" stop-color="#fda22c"/>
+    </linearGradient>
+    <filter id="Tracé_5" x="0" y="275.42" width="889.221" height="312.113" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_1638" data-name="Groupe 1638" transform="translate(-14.221 -160.246)">
+    <g transform="matrix(1, 0, 0, 1, 14.22, 160.25)" filter="url(#Tracé_5)">
+      <path id="Tracé_5-2" data-name="Tracé 5" d="M385.981,0C492.8,0,756.813,92.3,816.892,155.662s-151.293,93.156-190.6,97.768C424.743,277.085,243.246,297.873,89.365,265.36s-137.9-85-78.594-141.982C78.8,58.016,273.118,0,385.981,0Z" transform="translate(45.66 282.42)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Groupe_46" data-name="Groupe 46" transform="translate(61.968 262)">
+      <rect id="Image_22" data-name="Image 22" width="768" height="361" rx="30" transform="translate(-9.968 -16)" fill="#fff"/>
+      <g id="Groupe_6" data-name="Groupe 6" transform="translate(35.174 43)">
+        <text id="Traduire_de_n_importe_quelle_langue_" data-name="Traduire de n’importe quelle langue " transform="translate(-0.142 16)" fill="#364f6b" font-size="15" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Traduire de</tspan><tspan y="0" fill="#ff5936"> </tspan><tspan y="0" fill="#fdae33" font-family="Poppins-SemiBold, Poppins" font-weight="600">n’importe quelle langue </tspan></text>
+        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.666,17.188l5.653-5.63a1.066,1.066,0,1,1,1.509,1.506l-6.406,6.378a1.07,1.07,0,0,1-1.473.031l-6.45-6.4a1.066,1.066,0,0,1,1.509-1.506Z" transform="translate(284.15 -3.428)" fill="#fdae33"/>
+        <text id="Traduire_en_Français" data-name="Traduire en  Français" transform="translate(359.858 16)" fill="#364f6b" font-size="15" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Traduire en</tspan><tspan y="0" fill="#fda22c"> </tspan><tspan y="0" fill="#ff5936"> </tspan><tspan y="0" fill="#fdae33" font-family="Poppins-SemiBold, Poppins" font-weight="600">Français</tspan></text>
+        <path id="Icon_ionic-ios-arrow-down-2" data-name="Icon ionic-ios-arrow-down" d="M13.666,17.188l5.653-5.63a1.066,1.066,0,1,1,1.509,1.506l-6.406,6.378a1.07,1.07,0,0,1-1.473.031l-6.45-6.4a1.066,1.066,0,0,1,1.509-1.506Z" transform="translate(531.988 -3.428)" fill="#fdae33"/>
+        <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(-0.142 59)" fill="none" stroke="#364f6b" stroke-width="0.8">
+          <rect width="338" height="160" rx="8" stroke="none"/>
+          <rect x="0.4" y="0.4" width="337.2" height="159.2" rx="7.6" fill="none"/>
+        </g>
+        <g id="Rectangle_24" data-name="Rectangle 24" transform="translate(360.858 59)" fill="none" stroke="#364f6b" stroke-width="0.8">
+          <rect width="337" height="160" rx="8" stroke="none"/>
+          <rect x="0.4" y="0.4" width="336.2" height="159.2" rx="7.6" fill="none"/>
+        </g>
+        <text id="Saisissez_votre_texte_ou_lien_du_site_que_vous_voulez_traduire._" data-name="Saisissez votre texte ou lien du site
+que vous voulez traduire. " transform="translate(15.858 87)" fill="#a0a0a0" font-size="12" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="0" y="0">Saisissez votre texte ou lien du site</tspan><tspan x="0" y="18">que vous voulez traduire. </tspan></text>
+        <g id="Groupe_5" data-name="Groupe 5" transform="translate(567.812 248)">
+          <rect id="Rectangle_25" data-name="Rectangle 25" width="128" height="37" rx="8" transform="translate(0.047 0)" fill="#fdae33"/>
+          <text id="Traduire_" data-name="Traduire " transform="translate(27.047 24)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">TRADUIRE </tspan></text>
+        </g>
+      </g>
+      <path id="Tracé_96" data-name="Tracé 96" d="M0,0V3.925" transform="translate(353.532 248.695)" fill="none" stroke="#5cd6ef" stroke-linecap="round" stroke-width="2"/>
+      <path id="Tracé_82" data-name="Tracé 82" d="M12.652,50s.277,7.552-6.318,7.576S-.009,50-.009,50Z" transform="translate(347.042 192.301)" fill="#5cd6ef"/>
+      <rect id="Rectangle_56" data-name="Rectangle 56" width="9" height="14" rx="4.5" transform="translate(349.032 234.001)" fill="#fdae33"/>
+      <path id="Tracé_90" data-name="Tracé 90" d="M0,0H6.077" transform="translate(350.532 253.126)" fill="none" stroke="#5cd6ef" stroke-linecap="round" stroke-width="2"/>
+      <g id="speaker" transform="translate(313.976 234)">
+        <path id="Tracé_115" data-name="Tracé 115" d="M11.336,16.055a.648.648,0,0,0-.688.078l-6.325,5.06H1.3a1.3,1.3,0,0,0-1.3,1.3v5.2a1.3,1.3,0,0,0,1.3,1.3H4.323l6.324,5.06a.651.651,0,0,0,.689.077.649.649,0,0,0,.368-.585v-16.9A.652.652,0,0,0,11.336,16.055Z" transform="translate(0 -15.99)" fill="#5cd6ef"/>
+        <path id="Tracé_116" data-name="Tracé 116" d="M342.859,122.44a.651.651,0,1,0-.914.926,5.186,5.186,0,0,1,0,7.345.65.65,0,1,0,.914.923,6.486,6.486,0,0,0,0-9.194Z" transform="translate(-327.864 -117.934)" fill="#fdae33"/>
+        <path id="Tracé_117" data-name="Tracé 117" d="M387.976,77.314a.651.651,0,0,0-.917.923,7.759,7.759,0,0,1,0,11.013.651.651,0,0,0,.917.923,9.062,9.062,0,0,0,0-12.859Z" transform="translate(-371.146 -74.64)" fill="#fdae33"/>
+      </g>
+      <g id="mark-as-favorite-star" transform="translate(701.507 233.999)">
+        <g id="star" transform="translate(0 0)">
+          <path id="Tracé_1235" data-name="Tracé 1235" d="M9.858,27.806l6.093,3.674-1.612-6.929,5.378-4.66-7.089-.608L9.858,12.75,7.089,19.283,0,19.891l5.378,4.66L3.766,31.481Z" transform="translate(0 -12.75)" fill="none" stroke="#fdae33" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="speaker-2" data-name="speaker" transform="translate(673.976 234)">
+        <path id="Tracé_115-2" data-name="Tracé 115" d="M11.336,16.055a.648.648,0,0,0-.688.078l-6.325,5.06H1.3a1.3,1.3,0,0,0-1.3,1.3v5.2a1.3,1.3,0,0,0,1.3,1.3H4.323l6.324,5.06a.651.651,0,0,0,.689.077.649.649,0,0,0,.368-.585v-16.9A.652.652,0,0,0,11.336,16.055Z" transform="translate(0 -15.99)" fill="#5cd6ef"/>
+        <path id="Tracé_116-2" data-name="Tracé 116" d="M342.859,122.44a.651.651,0,1,0-.914.926,5.186,5.186,0,0,1,0,7.345.65.65,0,1,0,.914.923,6.486,6.486,0,0,0,0-9.194Z" transform="translate(-327.864 -117.934)" fill="#fdae33"/>
+        <path id="Tracé_117-2" data-name="Tracé 117" d="M387.976,77.314a.651.651,0,0,0-.917.923,7.759,7.759,0,0,1,0,11.013.651.651,0,0,0,.917.923,9.062,9.062,0,0,0,0-12.859Z" transform="translate(-371.146 -74.64)" fill="#fdae33"/>
+      </g>
+    </g>
+    <g id="Groupe_1355" data-name="Groupe 1355" transform="translate(738.258 160.246)">
+      <path id="Tracé_1075" data-name="Tracé 1075" d="M57.128,62.7V28.689a29.6,29.6,0,0,0-13.5-25.231,25.309,25.309,0,0,0-10.554-2.3L11.015,0S6.379.777,3.347,8C1.188,13.14,0,20.743,0,27.069v44.8c3.489,1.787,7.517-.971,7.517-5.122V43.265a3.13,3.13,0,0,1,3.007-3.239V82.887c3.975,2.473,9.02-.6,9.02-5.612V43.265a3.129,3.129,0,0,1,3.007-3.239c.019,0,0-1.007,0,49.34,4.012,2.5,9.02-.64,9.02-5.612V43.265a3.13,3.13,0,0,1,3.007-3.239v46.1c3.975,2.473,9.02-.6,9.02-5.612V41.054a2.222,2.222,0,0,1,1-1.1,5.532,5.532,0,0,1,1.944-.407L46.6,62.535a10.139,10.139,0,0,0,7.517,3.4A3.127,3.127,0,0,0,57.128,62.7Z" transform="translate(69.696 90.118) rotate(177)" fill="#5cd6ef"/>
+      <path id="Tracé_1076" data-name="Tracé 1076" d="M108.79,129.12a36.922,36.922,0,0,0,2.108,17.215" transform="translate(-50.82 -40.091)" fill="none" stroke="#5cd6ef" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Tracé_1077" data-name="Tracé 1077" d="M76.555,131.46c.519,7.166.519,13.389-1.445,16.05" transform="translate(-45.806 -41.634)" fill="none" stroke="#5cd6ef" stroke-miterlimit="10" stroke-width="3"/>
+      <circle id="Ellipse_310" data-name="Ellipse 310" cx="6" cy="6" r="6" transform="translate(43.742 57.754)" fill="#fff"/>
+      <circle id="Ellipse_311" data-name="Ellipse 311" cx="6" cy="6" r="6" transform="translate(22.742 57.754)" fill="#fff"/>
+      <ellipse id="Ellipse_312" data-name="Ellipse 312" cx="1.5" cy="2" rx="1.5" ry="2" transform="translate(27.742 61.754)"/>
+      <path id="Tracé_1084" data-name="Tracé 1084" d="M3097.46,691.738c.9-.629,3.712,2.011,7.27,2.247s6.083-2.007,6.961-1.305c1.817,1.453-3.4,5.1-6.961,4.87S3095.72,692.956,3097.46,691.738Z" transform="translate(-3063.535 -617.479)" fill="#fff"/>
+      <ellipse id="Ellipse_36" data-name="Ellipse 36" cx="1.258" cy="1.258" rx="1.258" ry="1.258" transform="translate(69.012 55.888)" fill="#624032"/>
+      <g id="Groupe_217" data-name="Groupe 217" transform="translate(83.025 43.693) rotate(-9)">
+        <path id="Tracé_41" data-name="Tracé 41" d="M0,0C3.623,3.491,7.678,4.888,12.659,1.85" transform="translate(4.519 16.992) rotate(-106)" fill="none" stroke="#ffaf56" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Tracé_42" data-name="Tracé 42" d="M0,0C4.386,3.656,9.173,5.615,14.8,4.383a19.14,19.14,0,0,0,4.25-1.523" transform="matrix(-0.326, -0.946, 0.946, -0.326, 7.848, 19.558)" fill="none" stroke="#ffaf56" stroke-miterlimit="10" stroke-width="1"/>
+        <path id="Tracé_43" data-name="Tracé 43" d="M0,0C2.351,1.922,4.982,2.691,8.214,1.018" transform="translate(2.674 14.843) rotate(-109)" fill="none" stroke="#ffaf56" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <g id="Groupe_209" data-name="Groupe 209" transform="matrix(0.951, -0.309, 0.309, 0.951, 63.206, 54.096)">
+        <g id="Groupe_208" data-name="Groupe 208" transform="translate(0 0)">
+          <g id="Ellipse_152" data-name="Ellipse 152" transform="translate(16.566 5.348)" fill="#fff" stroke="#ffaf56" stroke-width="1">
+            <ellipse cx="1.528" cy="1.91" rx="1.528" ry="1.91" stroke="none"/>
+            <ellipse cx="1.528" cy="1.91" rx="1.028" ry="1.41" fill="none"/>
+          </g>
+          <rect id="Rectangle_193" data-name="Rectangle 193" width="2.674" height="14.135" rx="1.337" transform="translate(15.038 0)" fill="#ffaf56"/>
+          <path id="Tracé_257" data-name="Tracé 257" d="M0,0H3.25A41.472,41.472,0,0,1,2.9,5.03c-.223.254-1.124.692-1.564,0C.443,3.617,0,0,0,0Z" transform="translate(3.899 10.928)" fill="#ffaf56" stroke="#ffaf56" stroke-width="1"/>
+          <path id="Tracé_256" data-name="Tracé 256" d="M0,3.821A3.5,3.5,0,0,1,2.972,0H8.528V7.817H2.972A3.8,3.8,0,0,1,0,3.821Z" transform="translate(0 3.35)" fill="#ffaf56"/>
+          <path id="Tracé_255" data-name="Tracé 255" d="M0,2.295V9.755L6.853,12V0Z" transform="translate(8.371 1.173)" fill="#fff" stroke="#ffaf56" stroke-width="0.9"/>
+        </g>
+      </g>
+      <path id="Tracé_259" data-name="Tracé 259" d="M0,0S4.209,4.188,6.069,4.536,5.887.38,5.887.38" transform="translate(67.499 66.466)" fill="none" stroke="#5cd6ef" stroke-width="2"/>
+      <ellipse id="Ellipse_153" data-name="Ellipse 153" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(72.742 66.754)" fill="#5cd6ef"/>
+      <path id="Tracé_1103" data-name="Tracé 1103" d="M3.32,92.25c1.221.632.842,3.189,12.537.405" transform="translate(-0.052 -18.479)" fill="none" stroke="#5cd6ef" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Union_48" data-name="Union 48" d="M0,3.618A2.137,2.137,0,0,1,.579,2.153L.358,1.328A.254.254,0,0,1,.85,1.2l.161.6a2.163,2.163,0,0,1,.262-.14V.255a.254.254,0,1,1,.508,0V1.5a2.177,2.177,0,0,1,.255-.03V.255a.254.254,0,1,1,.509,0V1.5a2.157,2.157,0,0,1,.255.061V.508a.254.254,0,0,1,.509,0V1.793a2.171,2.171,0,0,1,.362.283l.319-.652c.094-.192.272-.3.4-.236s.153.265.058.457l-.426.871a2.132,2.132,0,0,1,.305,1.1A2.163,2.163,0,0,1,0,3.618Z" transform="translate(0 75.448) rotate(-74)" fill="#5cd6ef"/>
+      <path id="Union_51" data-name="Union 51" d="M1.618,3.617v-.2a1.733,1.733,0,0,1-.2-.024v.226a.2.2,0,1,1-.4,0V3.266a1.717,1.717,0,0,1-.2-.108v.056a.2.2,0,1,1-.4,0v-.4A1.7,1.7,0,0,1,0,1.709a1.719,1.719,0,0,1,3.437,0,1.692,1.692,0,0,1-.242.875l.153.312a.2.2,0,0,1-.364.176l-.068-.139a1.726,1.726,0,0,1-.288.224v.257a.2.2,0,0,1-.4,0V3.342a1.712,1.712,0,0,1-.2.048v.226a.2.2,0,1,1-.4,0Z" transform="translate(27.413 104.128) rotate(11)" fill="#5cd6ef"/>
+      <path id="Union_54" data-name="Union 54" d="M0,2.111a1.7,1.7,0,0,1,.405-1.1V.6a.2.2,0,0,1,.4,0V.661a1.718,1.718,0,0,1,.2-.108V.2a.2.2,0,1,1,.4,0V.429a1.73,1.73,0,0,1,.2-.024V.2a.2.2,0,1,1,.4,0V.429a1.715,1.715,0,0,1,.2.049V.4a.2.2,0,0,1,.4,0V.662a1.725,1.725,0,0,1,.287.224L2.984.747a.2.2,0,0,1,.364.176l-.153.312a1.692,1.692,0,0,1,.242.875A1.719,1.719,0,0,1,0,2.111Z" transform="translate(62.103 107.877) rotate(169)" fill="#5cd6ef"/>
+      <path id="Union_55" data-name="Union 55" d="M0,1.462A.861.861,0,0,1,.235.87L.146.537a.1.1,0,0,1,.2-.054L.411.726A.879.879,0,0,1,.517.67V.1A.1.1,0,0,1,.724.1v.5a.89.89,0,0,1,.1-.012V.1a.1.1,0,0,1,.207,0v.5a.881.881,0,0,1,.1.025V.206a.1.1,0,0,1,.207,0V.725a.88.88,0,0,1,.147.114l.13-.264c.038-.077.11-.12.161-.1s.062.108.024.185l-.173.352a.859.859,0,0,1,.124.445A.878.878,0,0,1,0,1.462Z" transform="matrix(0.914, -0.407, 0.407, 0.914, 72.344, 66.631)" fill="#5cd6ef"/>
+      <ellipse id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="2" rx="1.5" ry="2" transform="translate(48.742 61.754)"/>
+    </g>
+  </g>
+</svg>

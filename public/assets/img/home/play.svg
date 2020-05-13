@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="187" height="189" viewBox="0 0 187 189">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fed547"/>
+      <stop offset="1" stop-color="#fda22c"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_1639" data-name="Groupe 1639" transform="translate(-1045 -514)">
+    <g id="Groupe_1317" data-name="Groupe 1317" transform="translate(1173.333 743.667)">
+      <text id="Jouer" transform="translate(-58.333 -81.667)" fill="#fff" font-size="14" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">JOUER</tspan></text>
+    </g>
+    <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="93.5" cy="94.5" rx="93.5" ry="94.5" transform="translate(1045 514)" fill="url(#linear-gradient)"/>
+    <g id="Groupe_1318" data-name="Groupe 1318" transform="translate(0 -5)">
+      <text id="Quizz" transform="translate(1076 607)" fill="#fff" font-size="48" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Quizz</tspan></text>
+      <text id="Jouer-2" data-name="Jouer" transform="translate(1091 659)" fill="#fff" font-size="34" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Jouer</tspan></text>
+    </g>
+  </g>
+</svg>
