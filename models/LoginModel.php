@@ -11,18 +11,18 @@ class connection{
 
   function verifyConnection($data){
 
-    if (isset($data['pseudo']) == false) {
-        return false;
+    if (isset($data['email']) == false) {
+        return "wrong email";
     }
     if (isset($data['password']) == false) {
-        return false;
+        return "wrong password";
     }
 
-    $pseudo = $data['pseudo'];
+    $email = $data['email'];
     $password = $data["password"];
 
     $request = new connectSQL;
-    $result = $request->fetch("SELECT password FROM users WHERE pseudo=:pseudo", ["pseudo" => $pseudo])[0];
+    $result = $request->fetch("SELECT password FROM users WHERE email=:email", ["email" => $email])[0];
     if (isset($result)){
       $validPassword = password_verify($password, $result['password']);
 

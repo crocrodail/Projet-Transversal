@@ -5,6 +5,8 @@
   header("Access-Control-Allow-Methods: POST");
   header("Access-Control-Max-Age: 3600");
   header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+  $json = file_get_contents("php://input");
+  $data = json_decode($json, true);
 
 
   switch ($action) {
@@ -15,7 +17,7 @@
       http_response_code(200);
       require_once('models/RegisterModel.php');
       $register = new userRegister();
-      $addUser = $register->register($_POST);
+      $addUser = $register->register($data);
       echo json_encode($addUser);
       break;
 
@@ -26,7 +28,7 @@
       http_response_code(200);
       require_once('models/LoginModel.php');
       $user = new connection();
-      $connected = $user->verifyConnection($_POST);
+      $connected = $user->verifyConnection($data);
       echo json_encode($connected);
       break;
 
