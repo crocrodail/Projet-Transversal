@@ -8,7 +8,6 @@
   $json = file_get_contents("php://input");
   $data = json_decode($json, true);
 
-
   switch ($action) {
 
 
@@ -32,6 +31,19 @@
       echo json_encode($connected);
       break;
 
+
+    case 'historique':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/historiqueModel.php');
+        $historique = new historique();
+        $playersHistorique = $historique->get($_SESSION["id"]);
+        echo json_encode($playersHistorique);
+      } else {
+        echo json_encode("disconected");
+      }
+      break;
 
 
 
