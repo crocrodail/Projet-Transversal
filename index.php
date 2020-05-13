@@ -10,20 +10,31 @@ $url = $_SERVER["REQUEST_URI"];
 
 // on récupère le path
 $path = parse_url($url, PHP_URL_PATH);
-// /recette/index
 
 @list($null, $controller, $action) = explode("/", $path);
-            // recette    //index
 $controller = !empty($controller) ? $controller : "main";
 $action = $action ?? "index";
 
+
 // on récupère les paramètres
 $parameters = $_GET;
-require_once('config/secret.php');
-require_once('models/RegisterModel.php');
 
 
+$dir = new DirectoryIterator(dirname(__FILE__).'/controllers');
 
-if($controller == "users"){
+if($controller == "main"){
+
   require_once("controllers/UserController.php");
+
+} else {
+
+  foreach ($dir as $fileinfo) {
+    if (explode("C", $fileinfo->getFilename())[0] == $controller){
+      require_once("controllers/".$controller."Controller.php");
+      exit;
+    }
+  }
+
+  require_once("controllers/error404.php");
+
 }

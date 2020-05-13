@@ -1,4 +1,5 @@
 <?php
+require_once('models/db.php');
 
 class userRegister{
 
@@ -29,38 +30,34 @@ class userRegister{
     }
 
     if($error == false){
-      try {
-        require_once('config/secret.php');
 
-        $pseudo = $data["pseudo"];
-        $last_name = $data["last_name"];
-        $first_name = $data["first_name"];
-        $mail = $data["email"];
-        $birthday = $data["birthday"];
-        $password = password_hash($data["password"], PASSWORD_DEFAULT);
-        $dbh = new PDO('mysql:host='.bdd()["host"].';dbname='.bdd()["dbname"], bdd()["username"], bdd()["password"]);
-        $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sth = $dbh->prepare("
-            INSERT INTO users(pseudo, first_name, last_name, email, birthday, password)
-            VALUES(:pseudo, :first_name, :last_name, :email, :birthday, :password)");
-        $sth->bindParam(':pseudo', $pseudo);
-        $sth->bindParam(':first_name',$first_name);
-        $sth->bindParam(':last_name',$last_name);
-        $sth->bindParam(':email',$mail);
-        $sth->bindParam(':birthday',$birthday);
-        $sth->bindParam(':password',$password);
-        $sth->execute();
-        return "true";
+      $pseudo = $data["pseudo"];
+      $last_name = $data["last_name"];
+      $first_name = $data["first_name"];
+      $mail = $data["email"];
+      $birthday = $data["birthday"];
+      $password = password_hash($data["password"], PASSWORD_DEFAULT);
 
-      } catch (\Exception $e) {
-        echo $e->getMessage();
-        die;
-        return "false";
-      }
+      $request = new connectSQL;
+      $request->execute(
+        " INSERT INTO users(pseudo, first_name, last_name, email, birthday, password)
+          VALUES(:pseudo, :first_name, :last_name, :email, :birthday, :password)",
+          [
+            'pseudo' => $pseudo,
+            'first_name' => $first_name,
+            'last_name' => $last_name,
+            'email' => $mail,
+            'pseudo' => $pseudo,
+            'birthday' => $birthday,
+            'password' => $password,
+          ]);
+
+      return true;
+
 
     } else {
-      echo "eroor";
-      return "false";
+
+      return false;
 
     }
   }

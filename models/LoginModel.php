@@ -1,5 +1,7 @@
 <?php
 
+require_once('models/db.php');
+
 class connection{
 
   var $pseudo;
@@ -8,32 +10,31 @@ class connection{
   var $email;
 
   function verifyConnection($data){
-    require_once('config/secret.php');
+
     if (isset($data['pseudo']) == false) {
-        return "false";
+        return false;
     }
     if (isset($data['password']) == false) {
-        return "false";
+        return false;
     }
+
     $pseudo = $data['pseudo'];
     $password = $data["password"];
-    $dbh = new PDO('mysql:host='.bdd()["host"].';dbname='.bdd()["dbname"].'', bdd()["username"], bdd()["password"]);
-    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $dbh->prepare("SELECT password FROM users WHERE pseudo=:pseudo");
-    $stmt->execute(["pseudo" => $pseudo]);
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    $request = new connectSQL;
+    $result = $request->fetch("SELECT password FROM users WHERE pseudo=:pseudo", ["pseudo" => $pseudo])[0];
     if (isset($result)){
-      echo var_dump($result)."<br>";
       $validPassword = password_verify($password, $result['password']);
+
       if ($validPassword){
-        return "<h1>wellcome back ".$pseudo."</h1>";
+        return true;
       } else {
-        return "<h1>wrong password</h1>";
+        return "wrong password";
       }
 
     } else {
 
-      return "<h1>wrong pseudo</h1>";
+      return false;
 
     }
   }
