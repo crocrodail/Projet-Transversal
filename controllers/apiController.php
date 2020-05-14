@@ -66,6 +66,30 @@
         echo json_encode($allTheme);
       } 
       break;
+
+
+    case 'friendsRequest':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/requestFriendsModel.php');
+        $request = new request();
+        $myRequest = $myRequest->getRequest($_SESSION["id"]);
+        echo json_encode($myRequest);
+      } 
+      break;
+
+
+    case 'questions':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/questionModel.php');
+        $question = new question();
+        $tenQuestions = $question->getQuestions($themeId);
+        echo json_encode($tenQuestions);
+      } 
+      break;
       
 
 

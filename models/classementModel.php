@@ -6,7 +6,7 @@ class classement{
   function getClassement(){
 
     $request = new connectSQL;
-    $result = $request->fetch("SELECT points FROM `games_historic`");
+    $result = $request->fetch("SELECT points, pseudo FROM `users`");
     return $result;
 
   }
