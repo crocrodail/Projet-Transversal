@@ -90,6 +90,43 @@
         echo json_encode($tenQuestions);
       } 
       break;
+
+
+    case 'fileAttente':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/fileAttenteModel.php');
+        $waitingLine = new waitingLine();
+        $theOlder = $waitingLine->getTheLast();
+        echo json_encode($theOlder);
+      } 
+      break;
+    
+
+    case 'demandePourJouer':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/fileAttenteModel.php');
+        $demande = new demande();
+        $demandeJeu = $demande->getDemande();
+        echo json_encode($demandeJeu);
+      } 
+      break;
+
+    
+    case 'retirezDeLaListeAttente':
+    
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/fileAttenteModel.php');
+        $deletePlayer = new deletePlayerFromWaitList();
+        $rmFromWaiting = $deletePlayer->deleteListeAttente($_SESSION["id"]);
+        echo json_encode($rmFromWaiting);
+      } 
+      break;
+      
       
 
 
