@@ -24,10 +24,22 @@ class waitingLine{
     $request = new connectSQL;
     $result = $request->execute("DELETE FROM `game_file_attente` WHERE id = :userId",);
     [
-        "userId" => $userId;
+        "userId" => $userId
     ]
     return $result;
+  }
 
+
+  function addToList($userId, $theme_choose){
+    $request = new connectSQL;
+    $request->execute(
+      " INSERT INTO game_file_attente(id_players, theme_choose)
+        VALUES(:id_player, :theme_choose)",
+        [
+          'id_player' => $userId,
+          'theme_choose' => $theme_choose,
+        ]);
+    return "add to list";
   }
 
 }
