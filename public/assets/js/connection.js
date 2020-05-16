@@ -15,10 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     .then((res) =>  {
       res.json()
       .then((json) =>  {
-          if (json == true) {
-            localStorage.setItem('Connexion', 'true');
-            window.location = './home.html';
-          }
+        if (json == true) {
+          localStorage.setItem('Connexion', 'true');
+          localStorage.setItem('id', json.id);
+          window.location = './home.html';
+        }
       });
     });
 

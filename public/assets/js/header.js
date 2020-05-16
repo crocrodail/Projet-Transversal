@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     if (localStorage.getItem('Connexion') == "true"){
       localStorage.removeItem('Connexion');
+      localStorage.removeItem('id');
       fetch("http://localhost:8000/api/deco");
       button.innerHTML = "Se connecter";
     } else {
