@@ -1,0 +1,72 @@
+.waiting
+  text-align: center
+
+
+  .player
+    display: flex
+    flex-direction: row-reverse
+    width: 90vw
+    margin: auto
+    margin-top: 20vw
+
+    img
+      width: 23vw
+      height: 23vw
+      border-radius: 100%
+
+    p
+      background-color: #5CD6EF
+      font-size: 6vw
+      padding: 1.5vw 8vw
+      color: white
+      font-weight: bold
+      margin-left: -2vw
+      border-radius: 0.5vw
+
+  a
+    color: #FFAF56
+    font-size: 3vw
+
+  p
+    font-size: 5vw
+    color: #FFAF56
+    font-weight: bold
+
+    span
+      color: #4AC3DB
+
+  button
+    width: 70vw
+    height: 15vw
+    background-color: #5CD6EF
+    border: none
+    color: white
+    font-weight: bold
+    font-size: 4vw
+    margin-top: 8vw
+    margin-bottom: 15vw
+
+    &:hover
+      cursor: pointer
+
+  .disabled
+    background-color: #bababa
+
+    &:hover
+      cursor: not-allowed
+
+  .loader
+    border: 3vw solid #f3f3f3
+    border-top: 3vw solid #3498db
+    border-radius: 50%
+    width: 15vw
+    height: 15vw
+    animation: spin 1s linear infinite
+    margin: auto
+
+
+  @keyframes spin
+    0%
+      transform: rotate(0deg)
+    100%
+      transform: rotate(360deg)
