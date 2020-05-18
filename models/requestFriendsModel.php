@@ -8,7 +8,7 @@ class request{
     $request = new connectSQL;
     $result = $request->fetch("SELECT sender_id, pseudo  FROM `friends` INNER JOIN users ON users.id = friends.sender_id WHERE recever_id = userId",
     [
-        "userId" => $userId;
+        "userId" => $userId
     ]
 );
     return $result;

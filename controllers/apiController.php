@@ -170,6 +170,46 @@
       break;
 
 
+    case 'addFriends':
+
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/friendsModel.php');
+        $friends = new friends();
+        $addFriends = $friends->addFriends($_SESSION["id"], );
+        echo json_encode($addFriends);
+      } else {
+        echo json_encode("error");
+      }
+      break;
+
+
+    case 'validFriendRequest':
+
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/friendsModel.php');
+        $friends = new friends();
+        $validFriends = $friends->validFriends($_SESSION["id"], );
+        echo json_encode($validFriends);
+      } else {
+        echo json_encode("error");
+      }
+      break;
+
+
+    case 'usersData':
+
+      http_response_code(200);
+      if (isset($_SESSION["id"])){
+        require_once('models/usersData.php');
+        $users = new changeUsers();
+        $newUserData = $users->changeUsers($data["photo"], $data["email"], $data["username"], $data["password"]);
+        echo json_encode($newUserData);
+      } else {
+        echo json_encode("error");
+      }
+      break;
 
 
     default:
