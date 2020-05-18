@@ -5,20 +5,17 @@ html,body{
     overflow-x:hidden;
 }
 
-.jeu h1 {
-    color: #FFAF56;
-    text-align: center;
-    font-size: 2vw;
-    font-weight: 900;
-    padding-top: 2%;
-    padding-bottom: 1%;
-}
 
+.jeu h1{
+color: #FFAF56;
+text-align: center;
+font-size: 2vw;
+font-weight: 900;
+}
 .jeu img{
     width: 11vw;
 }
-
-.jeu button {
+.jeu button{
     background-color: #FDAE33;
     color: white;
     border-style: none;
@@ -28,25 +25,12 @@ html,body{
     border-radius: 0.2vw;
     margin: auto;
     font-weight: bold;
-    margin-left: 43.9vw;
+    margin-left: 43.5vw;
 }
-
-
 .jeu .content2 {
     display: flex;
-    margin-left: 21vw;
-    padding-top: 4%;
+    margin-left: 30vw;
 }
-
-.jeu h1 {
-    color: #FFAF56;
-    text-align: center;
-    font-size: 2.9vw;
-    font-weight: 900;
-    padding-top: 2%;
-    padding-bottom: 1%;
-}
-
 
 .jeu .content2 p{
     margin-top: 5vw;
@@ -63,9 +47,7 @@ html,body{
     padding-top: 2vw;
     padding-left: 12vw;
     padding-right: 3vw;
-    padding-top: 4%;
 }
-
 .jeu .content2 p .titre{
     font-weight: bold;
     color: white;
@@ -73,8 +55,8 @@ html,body{
 }
 
 
-.services {
-    margin-top: 5%;
+.services{
+    margin-top: 250px;
     background-image: url(../img/info-quizz/background.svg);
     height: 47vw;
     width: 100vw;
@@ -112,13 +94,13 @@ html,body{
         right: 30vw;
     }
 
-    .services .content p {
+    .services .content p{
         font-size: 2vw;
         margin-bottom: 8vw;
         font-weight: bold;
         color: #25446E;
-        padding-top: 7vw;
-}
+        padding-top: 6vw;
+    }
 
 
 
@@ -201,22 +183,17 @@ html,body{
     display: block;
     height: 35vw;
 }
-
-.bulle .content h1 {
+.bulle .content h1{
     margin-top: 2vw;
     color: white;
     font-size: 2vw;
-    padding-top: 4vw;
+    padding-top: 2vw;
 }
-
-.bulle .content p {
+.bulle .content p{
     color: white;
     font-size: 1.5vw;
     font-weight: bold;
-    width: 50vw;
-    padding-left: 13%;
-    padding-top: 2%;
-    line-height: 178%;
+    width: 69vw;
 }
 
 .rejoindre{
@@ -225,22 +202,18 @@ html,body{
 .rejoindre .content{
     text-align: center;
 }
-
-.rejoindre .content h1 {
+.rejoindre .content h1{
     color: #25446E;
-    font-size: 2.5vw;
-    padding-top: 8%;
+    font-size: 3vw;
 }
-
-.rejoindre .content p {
+.rejoindre .content p{
     margin-top: 6vw;
     color: #25446E;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     margin-right: 12vw;
     margin-left: 12vw;
 }
-
 .rejoindre .content p span{
     color: #FFAF56;
 }
@@ -249,218 +222,4 @@ html,body{
     position: absolute;
     margin-left: 16vw;
     margin-top: -12vw;
-}
-
-
-@media (max-width:1024px) {
-
-.jeu h1 {
-    color: #FFAF56;
-    text-align: center;
-    font-size: 2.9vw;
-    font-weight: 900;
-    padding-top: 2%;
-    padding-bottom: 1%;
-}
-
-.services .content p {
-    font-size: 2.3vw;
-    margin-bottom: 8vw;
-    font-weight: bold;
-    color: #25446E;
-    padding-top: 7vw;
-}
-
-.marche .content h1 {
-    padding-top: 5vw;
-    color: #25446E;
-    font-size: 2.3vw;
-}
-.bulle .content h1 {
-    margin-top: 2vw;
-    color: white;
-    font-size: 2.5vw;
-    padding-top: 4vw;
-}
-
-
-.rejoindre .content h1 {
-    color: #25446E;
-    font-size: 2.3vw;
-    padding-top: 8%;
-}
-
-
-    }
-
-
-@media (max-width:640px) {
-
-.jeu h1 {
-    color: #FFAF56;
-    text-align: center;
-    font-size: 4.9vw;
-    font-weight: 900;
-    padding-top: 7%;
-    padding-bottom: 1%;
-}
-
-.jeu button {
-    background-color: #FDAE33;
-    color: white;
-    border-style: none;
-    width: 24vw;
-    height: 8vw;
-    font-size: 2.5vw;
-    border-radius: 2.2vw;
-    margin: auto;
-    font-weight: bold;
-    margin-left: 37.9vw;
-}
-
-.jeu .content2 {
-    display: flex;
-    margin-left: 21vw;
-    padding-top: 9%;
-}
-
-.services {
-    margin-top: 5%;
-    background-image: url(../img/info-quizz/background.svg);
-    height: 300vw;
-    width: 102vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-
-.services .content ul {
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: auto;
-    width: 70%;
-}
-
-.services .content ul .main2 {
-    display: none;
-}
-
-.services .content p {
-    font-size: 4.3vw;
-    margin-bottom: 14vw;
-    font-weight: bold;
-    color: #25446E;
-    padding-top: 31vw;
-}
-
-.services .content ul .main1 {
-    display: none;
-}
-
-.services .content ul img {
-    width: 31vw;
-    padding-top: 7%;
-}
-
-.marche .content h1 {
-    padding-top: 0vw;
-    color: #25446E;
-    font-size: 4.3vw;
-}
-
-.marche .content ul {
-    padding: 0;
-    text-align: center;
-    display: flex;
-    /* justify-content: space-around; */
-    list-style: none;
-    margin: auto;
-    width: 70%;
-    flex-direction: column;
-}
-
-.marche .content ul .main3 {
-    display: none;
-}
-
-.marche .content ul img {
-    padding-top: 10vw;
-    width: 31vw;
-    margin-bottom: 3vw;
-
-}
-
-.marche .content ul p {
-    margin: 0;
-    color: #25446E;
-    font-size: 3vw;
-    width: 72vw;
-    font-weight: bold;
-}
-
-.marche .content ul .main4 {
-    display: none;
-}
-
-.marche .content ul .main5 {
-    display: none;
-}
-
-
-.bulle .content {
-    
-    display: none;
-}
-
-.bulle {
-    display: none;
-}
-
-.rejoindre .content h1 {
-    color: #25446E;
-    font-size: 4.9vw;
-    padding-top: 8%;
-}
-
-.rejoindre .content .main6 {
-    width: 12vw;
-    position: absolute;
-    margin-left: 24vw;
-    margin-top: -13vw;
-}
-
-.rejoindre .content p {
-    margin-top: 10vw;
-    color: #25446E;
-    font-size: 3.5vw;
-    font-weight: bold;
-    margin-right: 12vw;
-    margin-left: 12vw;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

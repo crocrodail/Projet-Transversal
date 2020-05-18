@@ -30,10 +30,6 @@ body {
     width: 80%;
 }
 
-.elements a {
-    text-decoration: none;
-}
-
 .contact .elements button {
     all: unset;
     padding: 0.5vw 2.2vw;
@@ -102,8 +98,6 @@ body {
         width: 95%;
         text-align: center;
     }
-
-
     .container img{
         width: 35vw;
         margin-right: auto;
