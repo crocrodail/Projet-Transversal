@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a660170305.js" crossorigin="anonymous"></script>
+    <script data-account="MdHhpQKTOH" src="https://cdn.userway.org/widget.js"></script>
+    <script type="text/javascript" src="assets/js/header.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/loading-bar.css"/>
+    <script type="text/javascript" src="assets/js/loading-bar.js"></script>
+    <link rel="stylesheet" href="assets/css/header_footer.min.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/game.min.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/game.tablet.min.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/game.mobile.min.css">
+  </head>
+  <body>
+
+    <header>
+      <button class="lang-tab" type="button">Français&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></button>
+
+      <div class="content">
+        <input type="checkbox">
+        <a href="./home.html"><img src="assets/img/header_footer/logo.svg" alt="logo"></a>
+        <ul>
+          <li><a href="./traducteur.html">Traducteurs</a></li>
+          <li><a href="./a-propos.html">À propos</a></li>
+          <li><a href="./MyAccount.html">Mon compte</a></li>
+          <li><a href="./connexion.html"><button class="login" type="button">Se connecter</button></a></li>
+          <li><button class="lang" type="button">Français&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></button></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="loading" style="display: none">
+      <div class="center">
+        <img src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 1">
+        <div style="width: 10vw; height: 10vw;" data-value="70" data-preset="circle" class="loading ldBar label-center"></div>
+        <img src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 2">
+      </div>
+      <p id='theme'>Clichés</p>
+    </div>
+
+    <div class="game" style="display: none">
+      <div class="center">
+        <div class="player">
+          <img class="playerImg" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 1">
+          <p class="points">0 pt&nbsp;&nbsp;&nbsp;<img src="assets/img/game/pt.svg" alt="points"></p>
+        </div>
+        <p id="themegame">Clichés</p>
+        <div class="player">
+          <img class="playerImg" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 2">
+          <p class="points">0 pt &nbsp;&nbsp;&nbsp;<img src="assets/img/game/pt.svg" alt="points"></p>
+        </div>
+      </div>
+      <h1>Question: 1/10</h1>
+      <h2>Comment dit-on "Bonjour" en chinois</h2>
+      <div class="reponse">
+        <button class="correct"> <img style="position: absolute; right: 1vw; left: unset;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Hao Ni</button>
+        <button class="error"> <img src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Ni Hao </button>
+        <button> <img src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Kim Jong Un</button>
+        <button> <img src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Buenos Dias</button>
+      </div>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+
+
+    </div>
+
+    <div class="end" style="display: block">
+
+      <div class="content" >
+        <div class="player">
+          <h1>Vainqueur</h1>
+          <img class="winner1" src="assets/img/game/win.svg" alt="winner">
+          <img class="imgplayer" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur1">
+          <p class="points">0 &nbsp;&nbsp;&nbsp;<img src="assets/img/game/ptend.svg" alt="points"></p>
+        </div>
+        <p>Score</p>
+        <div class="player">
+          <h1>Vainqueur</h1>
+          <img class="winner2" src="assets/img/game/win.svg" alt="winner">
+          <img class="imgplayer" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur1">
+          <p class="points">0 &nbsp;&nbsp;&nbsp;<img src="assets/img/game/ptend.svg" alt="points"></p>
+        </div>
+      </div>
+
+      <a href="#"><button>Nouvelle Partie</button></a>
+      <a href="#"><button>Voir le classement</button></a>
+
+    </div>
+
+
+
+  </body>
+</html>
