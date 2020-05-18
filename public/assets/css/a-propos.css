@@ -2,19 +2,16 @@ html,body{
     font-family:Poppins;
     padding:0;
     margin:0;
-    overflow-x:hidden}
+    overflow-x:hidden
+}
 
-.concept{
+/* Contents 1 */
+
+.content1{
     display:flex;
     justify-content:space-between}
 
-.concept img{
-    width: 43vw;
-    margin-left: 3vw;
-    margin-top: 6vw;
-}
-
-.concept .content{
+.concept{
     text-align:left;
     font-size:1.4vw;
     margin-top:8vw;
@@ -23,151 +20,424 @@ html,body{
     width:40vw;
 }
 
-.concept .content h1{
+.concept h1{
     color: #FFAF56;
+    font-size: 35px;
 }
         
-.concept .content p{
-    white-space:pre-line;
+.concept p {
+    white-space: pre-line;
     color: #25446E;
     font-weight: normal;
+    margin-top: -2%;
+    line-height: 2;
 }
 
-.concept .content p span{
-    font-weight: bold;
+.concept p span{
+    font-weight: 900;
 }
 
-.langue{
+.image_mobweb img {
+    width: 63%;
+    margin-left: 24%;
+    margin-top: 14%;
+}
+
+/* Contents 2 */
+
+.content2 {
     margin-top: 106px;
     background-image: url("../img/a propos/background.svg");
-    height: 50vw;
+    height: 51vw;
     width: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
 }
-    
-.langue .content{
-    display:block;
-    text-align:center;
-    margin:auto;
+
+.langues h2 {
+    padding-top: 6vw;
+    color: #25446E;
+    font-size: 2vw;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 4%;
 }
 
-    .langue .content h1{
-        padding-top:8vw;
-        color:#25446E;
-        font-size:2vw;
-    }
+.drapeaux p {
+    font-size: 1.2vw;
+    color: white;
+    font-weight: bold;
+    padding-left: 12%;
     
-    .langue .content ul{
-        padding:0;
-        text-align:center;
-        display:flex;
-        justify-content:space-around;
-        list-style:none;
-        margin:auto;
-        width:50%;
-    }
+
+}
+
+
+.drapeaux {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 17%;
+    margin-left: 24%;
+}
+
+.drapeaux img{
+    width: 67%;
+    padding-top: 3%;  
+
+}
+
+.drapeaux div {
+    padding-bottom: 1%;
+}
+
+.langues-texte p {
+    font-size: 1.5vw;
+    width: 66vw;
+    color: #25446E;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 16%;
+}
+
+/* Contents 3 */
+
+.signes h2 {
+    color: #FFAF56;
+    text-align: center;
+    font-size: 2.5vw;
+    padding-top: 2%;
+}
+
+.contain-signes {
+    display:flex;
+    flex-direction: row;
+}
+
+.People-signing {
+    margin-left: 15vw;
+    margin-top: 2vw;
+    width: 25vw;
+}
+
+
+.People-signing img {
+    margin-left: 0vw;
+    margin-top: 2vw;
+    width: 25vw;
+}
+
+.signes-texte p {
+    color: #25446E;
+    text-align: left;
+    font-size: 21px;
+    padding-left: 12%;
+    padding-right: 28%;
+    padding-top: 3%;
+}
+
+/* Contents 4 */
+.quizz h2 {
+    color: #FFAF56;
+    text-align: center;
+    font-size: 2.5vw;
+    padding-top: 3%;
+}
+
+.contain-quizz {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+}
+
+.phone-quizz img {
+    margin-left: 13vw;
+    margin-top: 2vw;
+    width: 26vw;
+}
+
+.quizz-texte p {
+    color: #25446E;
+    text-align: left;
+    font-size: 23px;
+    padding-left: 14%;
+    padding-right: 30%;
+    padding-top: 20%;
+}
+
+@media screen and (max-width: 1024px){
+
+/* Contents 1 */ 
+
+.content1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image_mobweb img {
+    width: 42%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.concept {
+    text-align: left;
+    font-size: 1.4vw;
+    margin-top: 5vw;
+    margin-right: 11vw;
+    font-weight: bold;
+    width: 40vw;
+    margin-left: -36%;
+}
+
+.concept h1 {
+    color: #FFAF56;
+    font-size: 35px;
+}
+.concept p {
+    white-space: pre-line;
+    color: #25446E;
+    font-weight: normal;
+    margin-top: -2%;
+    line-height: 2;
+    font-size: 15px;
     
-    .langue .content p{
-        font-size: 1.5vw;
-        width: 66vw;
-        color: #25446E;
-        font-weight: bold;
-        margin-left: 17vw;
-    }
-        
-    .langue .content ul img{
-        padding-top:2vw;
-        width:8vw;
-    }
-        
-    .langue .content ul p{
-        margin:0;
-        color:white;
-        font-size:1.5vw;
-        width:13vw;
-        font-weight:bold}
+}
 
 
-        .signes{
-            margin-top: 4vw;
-            height: 40vw;
-            width:100vw;
-            background-size:contain;
-            background-repeat:no-repeat}
-            
-        .signes .content{
-            justify-content:space-between}
-            
-        .signes .content img{
-            margin-left:10vw;
-            margin-top:2vw;
-            width:27vw;
-        }
-        
-        .signes .content2{
-            display:flex;
-            justify-content:space-between;
-        }
-        
-        .signes .content .text{
-            margin-top:2vw;
-            width:50vw;
-            text-align:center;
-            font-size:1.5vw;
-            margin-right:10vw}
-        
-        .signes .content h1{
-            color: #FFAF56;
-            text-align: center;
-            font-size: 2.5vw;
-        }
+.content2 {
+    margin-top: 37px;
+    background-image: url(../img/a propos/background_ipad.png);
+    height: 51vw;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
-        .signes .content p{
-            color: #25446E;
-            text-align: left;
-        }
+.langues h2 {
+    padding-top: 5vw;
+    color: #25446E;
+    font-size: 2vw;
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 3%;
+}
+
+/* Contents 2 */ 
 
 
+.drapeaux {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1%;
+    margin-left: 16%;
+    padding-top: -1%;
+}
 
-        .nouveaute{
-            height:32vw;
-            width:100vw;
-            background-size:contain;
-            background-repeat:no-repeat}
+.drapeaux div {
+    padding-bottom: 1%;
+    margin-right: -4%;
+}
 
-            .nouveaute .content{
-                justify-content:space-between}
-            
-        .nouveaute .content2{
-            display:flex;
-            justify-content:space-between}
-            
-        .nouveaute .content img{
-            margin-left:10vw;
-            margin-top:4vw;
-            width:27vw}
-        
-        .nouveaute .content .text{
-            margin-top:8vw;
-            width:50vw;
-            text-align:center;
-            font-size:1.5vw;
-            margin-right:10vw}
-        
-        .nouveaute .content h1{
-            color: #FFAF56;
-            text-align: center;
-            font-size: 2.5vw;
-        }
+.drapeaux img {
+    width: 43%;
+    padding-top: 3%;
+}
 
-        .nouveaute .content p{
-            color: #25446E;
-            text-align: left;
-            margin-left: 4vw;
-            margin-right: 6vw;
-            margin-top: 5vw;
-        }
+.drapeaux p {
+    font-size: 1.2vw;
+    color: white;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.langues-texte p {
+    font-size: 1.4vw;
+    width: 66vw;
+    color: #25446E;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 16%;
+}
+
+/* Contents 3 */ 
+
+.signes h2 {
+    color: #FFAF56;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 1%;
+}
+
+.People-signing img {
+    margin-left: -11vw;
+    margin-top: 2vw;
+    width: 37vw;
+}
+
+.signes-texte p {
+    color: #25446E;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 12%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+
+/* Contents 4 */ 
+
+.quizz h2 {
+    color: #FFAF56;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 3%;
+}
+
+.phone-quizz img {
+    margin-left: 7vw;
+    margin-top: 2vw;
+    width: 33vw;
+}
+
+.quizz-texte p {
+    color: #25446E;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 13%;
+    padding-right: 15%;
+    padding-top: 20%;
+}
+
+
+}
+
+
+@media screen and (max-width: 640px){
+
+/* Contents 1 */ 
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_mobweb img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 11%;
+}
+
+
+.concept {
+    text-align: left;
+    margin-top: 5vw;
+    margin-right: 0vw;
+    font-weight: bold;
+    width: 93vw;
+    margin-left: 7%;
+}
+
+.concept h1 {
+    color: #FFAF56;
+    font-size: 22px;
+}
+
+.concept p {
+    white-space: pre-line;
+    color: #25446E;
+    font-weight: normal;
+    margin-top: -2%;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.concept p span {
+    font-weight: 900;
+    font-size: 13px;
+}
+
+
+/* Contents 2 */ 
+
+.content2 {
+    display: none;
+}
+
+/*  jarrive pas changer le baground putin */ 
+
+/* Contents 3 */ 
+
+.contain-signes {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.People-signing img {
+    margin-left: -12vw;
+    margin-top: 2vw;
+    width: 94vw;
+}
+
+.signes h2 {
+    color: #FFAF56;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 1%;
+    padding-right: 68px;
+}
+
+
+.signes-texte p {
+    color: #25446E;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 6%;
+    padding-right: 7%;
+    padding-top: 2%;
+}
+
+
+.quizz h2 {
+    color: #FFAF56;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 3%;
+}
+
+
+.contain-quizz {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-quizz img {
+    margin-left: 11vw;
+    margin-top: 2vw;
+    width: 77vw;
+}
+
+.quizz-texte p {
+    color: #25446E;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 6%;
+    padding-right: 8%;
+    padding-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
 
 
 
