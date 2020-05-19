@@ -204,7 +204,7 @@
       if (isset($_SESSION["id"])){
         require_once('models/usersData.php');
         $users = new changeUsers();
-        $newUserData = $users->changeUsers($data["photo"], $data["email"], $data["username"], $data["password"]);
+        $newUserData = $users->changeUsers($data["photo"], $data["email"], $data["username"], $_SESSION["id"]);
         echo json_encode($newUserData);
       } else {
         echo json_encode("error");

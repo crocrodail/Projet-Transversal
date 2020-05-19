@@ -13,6 +13,6 @@ class question{
 );
     return $result;
 
-  }
+  };
 
-}
+};
