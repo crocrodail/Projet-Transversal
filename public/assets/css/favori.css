@@ -13,6 +13,10 @@ body {
 h1{
     color: #FFAF56;
 }
+h2{
+    display: none;
+    color: #FFAF56;
+}
 .traduction{
     width: 70%;
     margin-right: auto;
@@ -52,4 +56,105 @@ h1{
     left: -3%;
     top: -0.8vw;
     font-size: 2vw;
+}
+@media (max-width: 1024px) {
+    .container{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        display: none;
+    }
+    h2{
+        display: block;
+    }
+    .before, .after{
+        width: 35vw;
+        border-radius: 10px;
+    }
+    .before{
+        background-color: #5CD6EF;
+    }
+    .after{
+        background-color: #FDAE33;
+        position: relative;
+    }
+    .trad{
+        text-align: center;
+        font-size: 2vw;
+        color: white;
+        font-weight: bold;
+        padding: 3%;
+    }
+    .langue{
+        width: 49%;
+        padding: 0;
+        color: #25446E;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    .traduction{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1vw;
+    }
+    .fa-star{
+        font-size: 2.3vw;
+    }
+}
+@media (max-width: 640px) {
+    .traduction{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1vw;
+    }
+    .one{
+        width: 100%;
+    }
+    .two{
+        width: 100%;
+    }
+    .before, .after{
+        width: auto;
+        border-radius: 5px;
+    }
+    .container{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        display: none;
+    }
+    h2{
+        display: block;
+    }
+    .before{
+        background-color: #5CD6EF;
+    }
+    .after{
+        background-color: #FDAE33;
+        position: relative;
+    }
+    .trad{
+        text-align: center;
+        font-size: 4.5vw;
+        color: white;
+        font-weight: bold;
+        padding: 3%;
+    }
+    .langue{
+        width: 49%;
+        padding: 0;
+        color: #25446E;
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+    .fa-star{
+        font-size: 4.5vw;
+        top: -1.5vw;
+    }
 }
