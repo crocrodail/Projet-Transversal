@@ -12,20 +12,31 @@ class waitingLine{
   }
 
 
-  function getDemande(){
-    $request = new connectSQL;
-    $result = $request->fetch("SELECT id_players, pseudo  FROM game_file_attente INNER JOIN users ON users.id = game_file_attente.id_players", );
-    return $result;
+  function getDemande($data){
+    if (isset($data['userId'])){
+      $request = new connectSQL;
+      $result = $request->fetch("SELECT * FROM game_invitation INNER JOIN users ON users.id = game_invitation.id_sender_player WHERE id_invited_player = :userId",
+        [
+          "userId" => $data['userId']
+        ]);
+      $request->execute("DELETE FROM `game_invitation` WHERE id_invited_player = :userId order by id_sender_player desc limit 1",
+      [
+        "userId" => $data['userId']
+      ]);
+      return $result;
+    } else {
+      return "no userId";
+    }
 
   }
 
 
   function deleteListeAttente($userId){
     $request = new connectSQL;
-    $result = $request->execute("DELETE FROM `game_file_attente` WHERE id = :userId",);
+    $result = $request->execute("DELETE FROM `game_file_attente` WHERE id = :userId",
     [
         "userId" => $userId
-    ]
+    ]);
     return $result;
   }
 

@@ -24,7 +24,7 @@ html,body{
     color: #FFAF56;
     font-size: 35px;
 }
-        
+
 .concept p {
     white-space: pre-line;
     color: #25446E;
@@ -68,7 +68,7 @@ html,body{
     color: white;
     font-weight: bold;
     padding-left: 12%;
-    
+
 
 }
 
@@ -82,7 +82,7 @@ html,body{
 
 .drapeaux img{
     width: 67%;
-    padding-top: 3%;  
+    padding-top: 3%;
 
 }
 
@@ -166,7 +166,7 @@ html,body{
 
 @media screen and (max-width: 1024px){
 
-/* Contents 1 */ 
+/* Contents 1 */
 
 .content1 {
     display: flex;
@@ -200,7 +200,7 @@ html,body{
     margin-top: -2%;
     line-height: 2;
     font-size: 15px;
-    
+
 }
 
 
@@ -222,7 +222,7 @@ html,body{
     margin-bottom: 3%;
 }
 
-/* Contents 2 */ 
+/* Contents 2 */
 
 
 .drapeaux {
@@ -259,7 +259,7 @@ html,body{
     margin-left: 16%;
 }
 
-/* Contents 3 */ 
+/* Contents 3 */
 
 .signes h2 {
     color: #FFAF56;
@@ -284,7 +284,7 @@ html,body{
 }
 
 
-/* Contents 4 */ 
+/* Contents 4 */
 
 .quizz h2 {
     color: #FFAF56;
@@ -314,7 +314,9 @@ html,body{
 
 @media screen and (max-width: 640px){
 
-/* Contents 1 */ 
+/* Contents 1 */
+
+
 
 .content1 {
     display: flex;
@@ -357,15 +359,20 @@ html,body{
 }
 
 
-/* Contents 2 */ 
+/* Contents 2 */
 
 .content2 {
-    display: none;
+    margin-top: 106px;
+    background-image: url("../img/a propos/background_mob.png");
+    width: 100vw;
+    height: 300vw;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-/*  jarrive pas changer le baground putin */ 
+/*  jarrive pas changer le baground putin */
 
-/* Contents 3 */ 
+/* Contents 3 */
 
 .contain-signes {
     display: flex;
@@ -437,8 +444,3 @@ html,body{
 
 
 }
-
-
-
-
-

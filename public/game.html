@@ -5,14 +5,31 @@
     <title>New game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a660170305.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script data-account="MdHhpQKTOH" src="https://cdn.userway.org/widget.js"></script>
+    <script type="text/javascript" src="assets/js/config.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
     <script type="text/javascript" src="assets/js/header.js"></script>
+    <script type="text/javascript" src="assets/js/notify.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/loading-bar.css"/>
     <script type="text/javascript" src="assets/js/loading-bar.js"></script>
     <link rel="stylesheet" href="assets/css/header_footer.min.css">
     <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/game.min.css">
     <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/game.tablet.min.css">
     <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/game.mobile.min.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/waitingPlayer.min.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/waitingPlayer.tablet.min.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/waitingPlayer.mobile.min.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/inviteFriend.min.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/inviteFriend.tablet.min.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/inviteFriend.mobile.min.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/whoToPlayWith.min.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/whoToPlayWith.tablet.min.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/whoToPlayWith.mobile.min.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/chooseTheme.min.css">
+    <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/chooseTheme.tablet.min.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="assets/css/chooseTheme.mobile.min.css">
   </head>
   <body>
 
@@ -31,6 +48,57 @@
         </ul>
       </div>
     </header>
+
+    <div class="contenttheme" style="display: none;">
+
+      <h1>Les thémes</h1>
+      <div class="themes">
+        <button value="drapeaux">Drapeaux</button>
+        <button value="expressions">Expressions</button>
+        <button value="histoire">Histoire</button>
+        <button value="coutumes">Coutumes</button>
+        <button value="cliches">Clichés</button>
+        <button value="object">Object</button>
+        <button value="villes">Villes</button>
+        <button value="cuisine">Cuisine</button>
+      </div>
+
+      <a href="./newGame.html"><p>Retour</p></a>
+    </div>
+
+
+    <div class="contentchoose" style="display: none;">
+      <img src="assets/img/whoToPlayWith/mascot.svg" alt="mascot">
+      <h1>Avec qui veux-tu jouer ?</h1>
+      <div class="themes">
+        <button id="friend">Amis</button>
+        <button id="random">Au hasard</button>
+      </div>
+
+      <a href="./newGame.html"><p>Retour</p></a>
+    </div>
+
+
+    <div class="invite" style="display: none;">
+      <img class="mascot" src="assets/img/inviteFriend/mascot.svg" alt="mascot">
+      <h1>Choisis un ami</h1>
+
+    </div>
+
+
+    <div class="waiting" style="display: none;">
+      <div class="player">
+        <p>G_cosabostra27</p>
+        <img src="assets/img/newgame/players.svg" alt="players">
+      </div>
+      <div class="loader"></div>
+      <p id="msg_waiting"> <span>G_cosabostra27</span> a accepté votre invitation</p>
+      <button class="disabled">Lancer le jeu</button>
+
+
+      <a href="./newGame.html"><p>Retour</p></a>
+    </div>
+
 
     <div class="loading" style="display: none">
       <div class="center">
@@ -68,7 +136,7 @@
 
     </div>
 
-    <div class="end" style="display: block">
+    <div class="end" style="display: none">
 
       <div class="content" >
         <div class="player">

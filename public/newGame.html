@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a660170305.js" crossorigin="anonymous"></script>
     <script data-account="MdHhpQKTOH" src="https://cdn.userway.org/widget.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript" src="assets/js/config.js"></script>
     <script type="text/javascript" src="assets/js/header.js"></script>
+    <script type="text/javascript" src="assets/js/notify.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/header_footer.min.css">
     <link rel="stylesheet" media="(min-width: 1025px)" href="assets/css/newGame.min.css">
     <link rel="stylesheet" media="(max-width: 1024px) and (min-width: 641px)" href="assets/css/newGame.tablet.min.css">
@@ -30,10 +35,10 @@
       </div>
     </header>
 
-    <button id="friendRequest">voir les demandes d'amis</button>
+    <button style="display: none" id="friendRequest">voir les demandes d'amis</button>
     <img id="mascots" src="assets/img/newgame/mascots.svg" alt="mascots"><br>
-    <button id="invite">Inviter un ami</button><br>
-    <button id="newgame">Nouvelle partie</button>
+    <a href="./game.html"><button id="invite">Inviter un ami</button></a><br>
+    <a href="./game.html"><button id="newgame">Nouvelle partie</button></a>
     <p class="pointss"><span>4890</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/img/newgame/points.svg" alt="points"></p>
 
     <h2>Historique partie jouée</h2>

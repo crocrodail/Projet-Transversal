@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify({"pseudo": pseudo.value, "email": email.value, "password": password.value})
       };
 
-      fetch("http://localhost:8000/api/register", myInit)
+      fetch(config.web_server+"api/register", myInit)
       .then((res) =>  {
         res.json()
         .then((json) =>  {

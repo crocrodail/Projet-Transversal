@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('Connexion') == "true"){
       localStorage.removeItem('Connexion');
       localStorage.removeItem('id');
-      fetch("http://localhost:8000/api/deco");
       button.innerHTML = "Se connecter";
     } else {
       window.location = './connexion.html';

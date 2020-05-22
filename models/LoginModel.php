@@ -12,22 +12,22 @@ class connection{
   function verifyConnection($data){
 
     if (isset($data['email']) == false) {
-        return "wrong email";
+        return "no email";
     }
     if (isset($data['password']) == false) {
-        return "wrong password";
+        return "no password";
     }
 
     $email = $data['email'];
     $password = $data["password"];
 
     $request = new connectSQL;
-    $result = $request->fetch("SELECT password FROM users WHERE email=:email", ["email" => $email])[0];
+    $result = $request->fetch("SELECT * FROM users WHERE email=:email", ["email" => $email])[0];
     if (isset($result)){
       $validPassword = password_verify($password, $result['password']);
 
       if ($validPassword){
-        return true;
+        return $result;
       } else {
         return "wrong password";
       }

@@ -1,0 +1,15 @@
+{
+    "name": "vendor/projet-trasversal",
+    "description": "spikin",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "raphael weys",
+            "email": "raphael.weys@supinternet.fr"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.2"
+    }
+}

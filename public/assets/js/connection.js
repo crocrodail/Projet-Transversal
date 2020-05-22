@@ -5,23 +5,38 @@ document.addEventListener('DOMContentLoaded', () => {
     Event.preventDefault();
     const email = document.querySelector('input[type="email"]');
     const password = document.querySelector('input[type="password"]');
-    var myInit = {
-      headers: { "Content-type": "application/json"},
-      method: 'POST',
-      body: JSON.stringify({"email": email.value, "password": password.value})
-    };
 
-    fetch("http://localhost:8000/api/login", myInit)
-    .then((res) =>  {
-      res.json()
-      .then((json) =>  {
-        if (json == true) {
-          localStorage.setItem('Connexion', 'true');
-          localStorage.setItem('id', json.id);
-          window.location = './home.html';
+    // fetch("https://venato.fr/supinternet/pt/index.php/api/login", myInit)
+    $.ajax({
+        url : config.web_server+'api/login',
+        type : 'POST',
+        dataType : 'json',
+        data: JSON.stringify({"email": email.value, "password": password.value}),
+
+        error : function(resultat, statut, erreur){
+          console.log(erreur);
+        },
+
+        complete : function(resultat, statut){
+          if (typeof resultat.responseJSON == "object") {
+            localStorage.setItem('Connexion', 'true');
+            localStorage.setItem('id', resultat.responseJSON.id);
+            window.location = './home.html';
+          }
         }
-      });
-    });
 
+    });
+    // fetch("http://localhost:8000/api/login", myInit)
+    // .then((res) =>  {
+    //   res.json()
+    //   .then((json) =>  {
+    //     console.log(json);
+    //     if (json) {
+    //       localStorage.setItem('Connexion', 'true');
+    //       localStorage.setItem('id', json.id);
+    //       //window.location = './home.html';
+    //     }
+    //   });
+    // });
   });
 });
