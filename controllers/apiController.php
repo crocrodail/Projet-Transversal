@@ -142,9 +142,9 @@
 
     case 'getMyInfo':
       http_response_code(200);
-      require_once('models/fileAttenteModel.php');
-      $demande = new waitingLine();
-      $info = $demande->getInfo($data);
+      require_once('models/usersModel.php');
+      $demande = new users();
+      $info = $demande->getOne($data);
       echo json_encode($info);
       break;
 
