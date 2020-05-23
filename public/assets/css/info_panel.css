@@ -1,0 +1,146 @@
+html,
+body {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+header{
+    width: 20%;
+    height: 60vw;
+    background-color: #5CD6EF;
+    float: left;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 13vw;
+    padding-top: 50%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+li{
+    padding-top: 3vw;
+}
+
+.recherche{
+    background-color: #FDA62E;
+}
+
+.has-search .form-control {
+    padding-left: 2vw;
+}
+.has-search{
+    position: relative;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    left: 21.5vw;
+    top: 1.4vw;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    font-size: 1vw;
+}
+.form-control{
+    border: none;
+    border-radius: 15px;
+    width: 15vw;
+    height: 1.2vw;
+    margin: 1.2vw;
+}
+
+.title{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3vw;
+}
+h1{
+    color: #FDA62E;
+    margin-top: 5vw;
+}
+.img{
+    background-image: url(/assets/img/newgame/players.svg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3vw;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    border: 1px solid #4AC3DB;
+    width: 20vw;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+.name > p{
+    color: #364F6B;
+    font-size: 1.2vw;
+    margin-right: 2vw;
+    font-weight: bold;
+}
+.save{
+    text-align: center;
+    border: none;
+    background-color: #FDA62E;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8vw;
+    width: 15vw;
+    height: 2vw;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.friends{
+    text-align: center;
+    border: none;
+    background-color: #5CD6EF;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8vw;
+    width: 15vw;
+    height: 2vw;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+}
+.cancel{
+    text-align: center;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8vw;
+    width: 15vw;
+    height: 2vw;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
