@@ -99,6 +99,86 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
+
+
+    $.ajax({
+      url : config.web_server+'api/historique',
+      type : 'POST',
+      dataType : 'json',
+      data: JSON.stringify({"userId": localStorage.getItem('id')}),
+
+      error : function(resultat, statut, erreur){
+        console.log(erreur);
+      },
+
+      complete : function(resultat, statut){
+        Object.keys(resultat.responseJSON).forEach((item, i) => {
+          var div = document.createElement("div");
+          var p1 = document.createElement("p");
+          var p2 = document.createElement("p");
+          var p3 = document.createElement("p");
+          document.querySelector('.Historique').appendChild(div);
+          div.appendChild(p1);
+          div.appendChild(p2);
+          div.appendChild(p3);
+          div.setAttribute("class", "historique");
+          if (resultat.responseJSON[item].victory == 1) {
+            resultat.responseJSON[item].victory = "Victory";
+          } else {
+            div.setAttribute("class", "historique defaite");
+            resultat.responseJSON[item].victory = "Defaite";
+          }
+          p1.innerHTML = resultat.responseJSON[item].score;
+          p2.innerHTML = resultat.responseJSON[item].victory;
+          p3.innerHTML = resultat.responseJSON[item].name;
+        });
+      }
+    });
+
+
+    $.ajax({
+      url : config.web_server+'api/classement',
+      type : 'POST',
+      dataType : 'json',
+
+      error : function(resultat, statut, erreur){
+        console.log(erreur);
+      },
+
+      complete : function(resultat, statut){
+        console.log(resultat.responseJSON);
+        Object.keys(resultat.responseJSON).forEach((item, i) => {
+          if (resultat.responseJSON[item].id == localStorage.getItem('id')) {
+            var mypoints = document.querySelector('.pointss');
+            mypoints.innerHTML = "<span>"+resultat.responseJSON[item].points+"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='assets/img/newgame/points.svg' alt='points'>";
+          }
+          var div = document.createElement("div");
+          var h1 = document.createElement("h1");
+          var img = document.createElement("IMG");
+          var child_div = document.createElement("div");
+          var p1 = document.createElement("p");
+          var p2 = document.createElement("p");
+          document.querySelector('.Classement').appendChild(div);
+          div.appendChild(h1);
+          div.appendChild(img);
+          div.appendChild(child_div);
+          child_div.appendChild(p1);
+          child_div.appendChild(p2);
+          div.setAttribute("class", "classement");
+          img.setAttribute("class", "userpp");
+          child_div.setAttribute("class", "info");
+          h1.innerHTML = i+1;
+          img.setAttribute("src", resultat.responseJSON[item].picture_profile);
+          p1.setAttribute("class", "pseudo");
+          p1.innerHTML = resultat.responseJSON[item].pseudo;
+          p2.innerHTML = "<span>"+resultat.responseJSON[item].points+"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='assets/img/newgame/points.svg' alt='points'>";
+        });
+      }
+    });
+
+
+
+
   }
 
   function trySocket(cb) {

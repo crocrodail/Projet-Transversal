@@ -11,7 +11,6 @@
     <script type="text/javascript" src="assets/js/game.js"></script>
     <script type="text/javascript" src="assets/js/header.js"></script>
     <script type="text/javascript" src="assets/js/notify.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/loading-bar.css"/>
     <script type="text/javascript" src="assets/js/loading-bar.js"></script>
     <link rel="stylesheet" href="assets/css/header_footer.min.css">
@@ -103,7 +102,7 @@
     <div class="loading" style="display: none">
       <div class="center">
         <img src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 1">
-        <div style="width: 10vw; height: 10vw;" data-value="70" data-preset="circle" class="loading ldBar label-center"></div>
+        <div style="width: 10vw; height: 10vw;" data-value="0" data-preset="circle" class="loading ldBar label-center"></div>
         <img src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 2">
       </div>
       <p id='theme'>Clichés</p>
@@ -113,21 +112,21 @@
       <div class="center">
         <div class="player">
           <img class="playerImg" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 1">
-          <p class="points">0 pt&nbsp;&nbsp;&nbsp;<img src="assets/img/game/pt.svg" alt="points"></p>
+          <div class="points"><p>0 pt</p>&nbsp;&nbsp;&nbsp;<img src="assets/img/game/pt.svg" alt="points"></div>
         </div>
         <p id="themegame">Clichés</p>
         <div class="player">
           <img class="playerImg" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur 2">
-          <p class="points">0 pt &nbsp;&nbsp;&nbsp;<img src="assets/img/game/pt.svg" alt="points"></p>
+          <div class="points"><p>0 pt</p> &nbsp;&nbsp;&nbsp;<img src="assets/img/game/pt.svg" alt="points"></div>
         </div>
       </div>
       <h1>Question: 1/10</h1>
       <h2>Comment dit-on "Bonjour" en chinois</h2>
       <div class="reponse">
-        <button class="correct"> <img style="position: absolute; right: 1vw; left: unset;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Hao Ni</button>
-        <button class="error"> <img src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Ni Hao </button>
-        <button> <img src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Kim Jong Un</button>
-        <button> <img src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> Buenos Dias</button>
+        <button><img style="display: none;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <img style="display: none; position: absolute; right: 1vw; left: unset;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <p>Hao Ni</p></button>
+        <button> <img style="display: none;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <img style="display: none; position: absolute; right: 1vw; left: unset;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <p>Ni Hao </p></button>
+        <button> <img style="display: none;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <img style="display: none; position: absolute; right: 1vw; left: unset;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <p>Kim Jong Un</p></button>
+        <button> <img style="display: none;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <img style="display: none; position: absolute; right: 1vw; left: unset;" src="https://i.imgflip.com/2/41m00z.jpg" alt="reponse joueur"> <p>Buenos Dias</p></button>
       </div>
       <div id="myProgress">
         <div id="myBar"></div>
@@ -143,19 +142,19 @@
           <h1>Vainqueur</h1>
           <img class="winner1" src="assets/img/game/win.svg" alt="winner">
           <img class="imgplayer" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur1">
-          <p class="points">0 &nbsp;&nbsp;&nbsp;<img src="assets/img/game/ptend.svg" alt="points"></p>
+          <div class="points"><p>0</p> &nbsp;&nbsp;&nbsp;<img src="assets/img/game/ptend.svg" alt="points"></div>
         </div>
         <p>Score</p>
         <div class="player">
           <h1>Vainqueur</h1>
           <img class="winner2" src="assets/img/game/win.svg" alt="winner">
           <img class="imgplayer" src="https://i.imgflip.com/2/41m00z.jpg" alt="joueur1">
-          <p class="points">0 &nbsp;&nbsp;&nbsp;<img src="assets/img/game/ptend.svg" alt="points"></p>
+          <div class="points"><p>0</p> &nbsp;&nbsp;&nbsp;<img src="assets/img/game/ptend.svg" alt="points"></div>
         </div>
       </div>
 
-      <a href="#"><button>Nouvelle Partie</button></a>
-      <a href="#"><button>Voir le classement</button></a>
+      <a href="./newGame.html"><button>Nouvelle Partie</button></a>
+      <a href="./newGame.html"><button>Voir le classement</button></a>
 
     </div>
 

@@ -3,15 +3,23 @@ require_once('models/db.php');
 
 class question{
 
-  function getQuestions($themeId){
-
-    $request = new connectSQL;
-    $result = $request->fetch("SELECT question, reponse_1, reponse2, reponse_3, reponse_4, corrected FROM `questions` ORDER BY RAND() LIMIT 10 WHERE theme_id = themeId" ,
-    [
-        "themeId" => $themeId;
-    ]
-);
-    return $result;
+  function getQuestions($data){
+    if (isset($data["theme"])){
+      $request = new connectSQL;
+      $result = $request->fetch(
+        "SELECT *
+        FROM `questions`
+        WHERE theme_id = (SELECT id FROM themes WHERE themes.name = :theme)
+        ORDER BY RAND()
+        LIMIT 10",
+      [
+          "theme" => $data["theme"]
+      ]
+  );
+      return $result;
+    } else {
+      return "no theme";
+    }
 
   }
 

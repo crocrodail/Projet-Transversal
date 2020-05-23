@@ -36,7 +36,7 @@
       http_response_code(200);
       require_once('models/historiqueModel.php');
       $historique = new historique();
-      $playersHistorique = $historique->get($_SESSION["id"]);
+      $playersHistorique = $historique->get($data);
       echo json_encode($playersHistorique);
       break;
 
@@ -74,6 +74,13 @@
       echo json_encode($myRequest);
     break;
 
+    case "addGame":
+      http_response_code(200);
+      require_once('models/historiqueModel.php');
+      $historique = new historique();
+      $myRequest = $historique->add($data);
+      echo json_encode($myRequest);
+    break;
 
     case 'friendsRequest':
 
@@ -85,12 +92,12 @@
       break;
 
 
-    case 'questions':
+    case 'getQuestions':
 
       http_response_code(200);
       require_once('models/questionModel.php');
       $question = new question();
-      $tenQuestions = $question->getQuestions($data["themeId"]);
+      $tenQuestions = $question->getQuestions($data);
       echo json_encode($tenQuestions);
       break;
 
@@ -131,6 +138,14 @@
       $addPlayer = new addPlayerToWaitList();
       $addToWaiting = $addPlayer->addToList($_SESSION["id"], $data[id_theme]);
       echo json_encode($addToWaiting);
+      break;
+
+    case 'getMyInfo':
+      http_response_code(200);
+      require_once('models/fileAttenteModel.php');
+      $demande = new waitingLine();
+      $info = $demande->getInfo($data);
+      echo json_encode($info);
       break;
 
 
