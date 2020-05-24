@@ -69,7 +69,7 @@ h2 {
     background-color: #f28206
 }
 
-.contact p{
+.text{
     margin-bottom: 0;
     font-family: Poppins;
     color: #f28206;
@@ -89,7 +89,12 @@ h2 {
 .logo{
     display: none;
 }
-
+#error{
+    position: absolute;
+    visibility: hidden;
+    color: red;
+    font-size: 1vw;
+}
 @media (max-width: 1024px) {
     h2{
         font-size: 4vw;

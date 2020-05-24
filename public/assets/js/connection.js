@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const password = document.querySelector('input[type="password"]');
+  password.addEventListener('focusout', function() {
+    error.style.visibility = "hidden";
+    password.style.border = "#4AC3DB 2px solid"
+  });
   const form = document.querySelector('form');
   form.addEventListener('submit', (Event) => {
 
     Event.preventDefault();
     const email = document.querySelector('input[type="email"]');
     const password = document.querySelector('input[type="password"]');
-
+    const error = document.querySelector('#error');
     // fetch("https://venato.fr/supinternet/pt/index.php/api/login", myInit)
     $.ajax({
         url : config.web_server+'api/login',
@@ -18,10 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         complete : function(resultat, statut){
-          if (typeof resultat.responseJSON == "object") {
+          if(typeof resultat.responseJSON == "object") {
             localStorage.setItem('Connexion', 'true');
             localStorage.setItem('id', resultat.responseJSON.id);
             window.location = './home.html';
+          } else{
+            error.style.visibility = "visible";
+            password.style.border = "red 2px solid"
           }
         }
 
