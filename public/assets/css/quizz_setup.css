@@ -1,0 +1,160 @@
+html,
+body {
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+header {
+    width: 20%;
+    height: 150vw;
+    background-color: #5CD6EF;
+    float: left;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 13vw;
+    padding-top: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+li {
+    padding-top: 3vw;
+}
+
+.recherche {
+    background-color: #FDA62E;
+}
+
+.has-search .form-control {
+    padding-left: 2vw;
+}
+
+.has-search {
+    position: relative;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    left: 21.5vw;
+    top: 1.4vw;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    font-size: 1vw;
+}
+
+.form-control {
+    border: none;
+    border-radius: 15px;
+    width: 15vw;
+    height: 1.2vw;
+    margin: 1.2vw;
+}
+
+h1 {
+    color: #FDA62E;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+h2 {
+    color: #FDA62E;
+    padding-left: 23vw;
+    padding-top: 2vw;
+}
+
+.theme {
+    background-color: white;
+    border-radius: 10px;
+    width: 7vw;
+    margin-left: 22.5vw;
+
+}
+
+.name {
+    text-align: center;
+    font-size: 1vw;
+    padding: 4px;
+    font-weight: bold;
+    color: rgb(102, 101, 101);
+}
+
+h3 {
+    color: #FDA62E;
+    padding-left: 23vw;
+}
+
+.question_name {
+    width: 70%;
+    height: 1.6vw;
+    margin-left: 3vw;
+    border-radius: 10px;
+    border: none;
+}
+
+.rep {
+    width: 10%;
+    height: 1.6vw;
+    margin-left: 3vw;
+    border-radius: 10px;
+    border: none;
+}
+
+.text {
+    font-size: 1vw;
+    padding-left: 1vw;
+    font-weight: bold;
+}
+
+.fa-trash {
+    font-size: 1.8vw;
+    padding-left: 1vw;
+    color: #364F6B;
+}
+
+.question {
+    padding-top: 1vw;
+}
+
+.add {
+    color: #FDA62E;
+    text-decoration: underline;
+    border: none;
+    background-color: #F5F5F5;
+    width: auto;
+    font-size: 1vw;
+    float: right;
+}
+
+.save {
+    float: right;
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: #FDA62E;
+    border: none;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+}
+
+.button {
+    float: right;
+    margin-right: 10vw;
+    width: 20vw;
+    margin-top: 5vw;
+}
