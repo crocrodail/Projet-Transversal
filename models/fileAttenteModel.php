@@ -11,7 +11,6 @@ class waitingLine{
 
   }
 
-
   function getDemande($data){
     if (isset($data['userId'])){
       $request = new connectSQL;
@@ -51,19 +50,6 @@ class waitingLine{
           'theme_choose' => $theme_choose,
         ]);
     return "add to list";
-  }
-
-  function getInfo($data){
-    if (isset($data["userId"])){
-      $request = new connectSQL;
-      $result = $request->fetch("SELECT * FROM users WHERE id = :userId",
-        [
-          "userId" => $data['userId']
-        ])[0];
-      return $result;
-    } else {
-      return 'no userId';
-    }
   }
 
 }

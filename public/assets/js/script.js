@@ -61,7 +61,29 @@ document.addEventListener('DOMContentLoaded', () => {
   var play = document.querySelector('.play');
   if (play) {
     play.addEventListener('click', (e) => {
-      window.location = './newGame.html';
+      window.location = './info_quizz.html';
+    });
+  }
+
+  var playd = document.querySelector('#playquizzz');
+  if (playd) {
+    playd.addEventListener('click', (e) => {
+      if (localStorage.getItem('id') != null){
+        window.location = './newGame.html';
+      } else {
+        Swal.fire({
+          text: "Vous devez etre connecté pour jouer au quizz !",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Se connecté!'
+        }).then((result) => {
+          if (result.value) {
+            window.location = './connexion.html';
+          }
+        });
+      }
     });
   }
 

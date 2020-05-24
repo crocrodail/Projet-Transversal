@@ -74,9 +74,13 @@ h2{
 .fa-edit{
     color: #FDA62E;
     font-size: 1.7vw;
-    padding-right: 10vw;
     margin-top: auto;
     margin-bottom: auto;
+}
+.thèmes a {
+  margin-right: 10vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 .thèmes{
     display: flex;
