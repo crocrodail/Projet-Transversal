@@ -35,7 +35,7 @@
             <h3>'.$a.'.Question</h3>
             <input type="text" name="Starfoullah" class="question_name text"
                 value="'.$value['question'].'">
-            <a href="../admin/deleteQuestion?id='.$value['id'].'"><i class="fas fa-trash"></i></a>
+            <a href="../admin/deleteQuestion?id='.$value['id'].'&theme='.$_GET['theme'].'"><i class="fas fa-trash"></i></a>
             <h3>'.$a.'.Réponse</h3>
             <input type="text" name="Reponse" class="rep text" value="'.$value['response_1'].'">
             <input type="text" name="Reponse" class="rep text" value="'.$value['response_2'].'">

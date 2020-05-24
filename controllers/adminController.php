@@ -44,6 +44,14 @@ switch ($action) {
       exit();
       break;
 
+    case 'deleteQuestion':
+      require_once('models/questionModel.php');
+      $question = new question();
+      $allQuestion = $question->remove($_GET);
+      header('Location: ../admin/quizz?theme='.$_GET['theme']);
+      exit();
+      break;
+
   default:
     include("views/error404.php");
     break;

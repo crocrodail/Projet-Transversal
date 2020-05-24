@@ -32,7 +32,6 @@ class question{
   function add($get, $post){
     if (isset($get) && isset($post)){
       $request = new connectSQL;
-      echo "a";
       $result = $request->execute(
         "INSERT INTO questions (`question`,`response_1`,`response_2`,`response_3`,`response_4`, `theme_id`, `corrected`)
         VALUES (
@@ -47,6 +46,13 @@ class question{
           "theme" => $get['theme'],
           "correct" => intval($post['correct']),
         ]);
+    }
+  }
+
+  function remove($id){
+    if(isset($id)){
+      $request = new connectSQL;
+      $result = $request->execute("DELETE FROM `questions` WHERE id = :id", ["id" => $id['id']]);
     }
   }
 
