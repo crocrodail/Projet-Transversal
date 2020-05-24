@@ -206,11 +206,9 @@ html,body{
 
 .content2 {
     margin-top: 37px;
-    background-image: url(../img/a propos/background_ipad.png);
+    background-image: url("../img/a propos/Fichier_1.svg");
     height: 51vw;
     width: 100vw;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 .langues h2 {
@@ -265,7 +263,7 @@ html,body{
     color: #FFAF56;
     text-align: center;
     font-size: 35px;
-    padding-top: 1%;
+    padding-top: 12vw;
 }
 
 .People-signing img {
