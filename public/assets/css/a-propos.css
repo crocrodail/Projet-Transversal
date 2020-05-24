@@ -174,18 +174,18 @@ html,body{
 }
 
 .image_mobweb img {
-    width: 42%;
-    margin-left: 10%;
-    margin-top: 10%;
+    width: 51%;
+    margin-left: -41%;
+    margin-top: 14%;
 }
 
 .concept {
     text-align: left;
     font-size: 1.4vw;
     margin-top: 5vw;
-    margin-right: 11vw;
+    margin-right: 4vw;
     font-weight: bold;
-    width: 40vw;
+    width: 67vw;
     margin-left: -36%;
 }
 
@@ -207,12 +207,13 @@ html,body{
 .content2 {
     margin-top: 37px;
     background-image: url("../img/a propos/Fichier_1.svg");
-    height: 51vw;
+    background-size: cover;
+    height: 90vw;
     width: 100vw;
 }
 
 .langues h2 {
-    padding-top: 5vw;
+    padding-top: 18vw;
     color: #25446E;
     font-size: 2vw;
     text-align: center;
@@ -226,9 +227,9 @@ html,body{
 .drapeaux {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 1%;
-    margin-left: 16%;
-    padding-top: -1%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vw;
 }
 
 .drapeaux div {
@@ -242,19 +243,20 @@ html,body{
 }
 
 .drapeaux p {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     color: white;
     font-weight: bold;
     padding-left: 5%;
 }
-
+.langues-texte{
+    width: 100%;
+}
 .langues-texte p {
     font-size: 1.4vw;
-    width: 66vw;
     color: #25446E;
     font-weight: bold;
-    text-align: center;
-    margin-left: 16%;
+    padding-top: 4vw;
+    padding-left: 0;
 }
 
 /* Contents 3 */
@@ -263,7 +265,7 @@ html,body{
     color: #FFAF56;
     text-align: center;
     font-size: 35px;
-    padding-top: 12vw;
+    padding-top: 5vw;
 }
 
 .People-signing img {
@@ -323,7 +325,7 @@ html,body{
 
 .image_mobweb img {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 0;
     margin-top: 11%;
 }
 
@@ -333,13 +335,14 @@ html,body{
     margin-top: 5vw;
     margin-right: 0vw;
     font-weight: bold;
-    width: 93vw;
-    margin-left: 7%;
+    width: 100vw;
+    margin-left: 0;
 }
 
 .concept h1 {
     color: #FFAF56;
     font-size: 22px;
+    text-align: center;
 }
 
 .concept p {
@@ -349,6 +352,7 @@ html,body{
     margin-top: -2%;
     line-height: 2;
     font-size: 14px;
+    text-align: center;
 }
 
 .concept p span {
@@ -360,16 +364,22 @@ html,body{
 /* Contents 2 */
 
 .content2 {
-    margin-top: 106px;
-    background-image: url("../img/a propos/background_mob.png");
+    margin-top: 4vw;
+    background-image: url("../img/a propos/Groupe\ 1825.svg");
     width: 100vw;
     height: 300vw;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
-
-/*  jarrive pas changer le baground putin */
-
+.drapeaux p{
+    font-size: 14px;
+}
+.langues-texte p{
+    font-size: 14px;
+}
+.langues h2{
+    padding-top: 27vw;
+}
 /* Contents 3 */
 
 .contain-signes {
@@ -388,8 +398,6 @@ html,body{
     color: #FFAF56;
     text-align: center;
     font-size: 22px;
-    padding-top: 1%;
-    padding-right: 68px;
 }
 
 
@@ -417,7 +425,7 @@ html,body{
 }
 
 .phone-quizz img {
-    margin-left: 11vw;
+    margin-left: 0;
     margin-top: 2vw;
     width: 77vw;
 }
@@ -430,15 +438,5 @@ html,body{
     padding-right: 8%;
     padding-top: 10%;
 }
-
-
-
-
-
-
-
-
-
-
 
 }
