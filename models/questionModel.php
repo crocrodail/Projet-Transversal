@@ -35,7 +35,7 @@ class question{
       $result = $request->execute(
         "INSERT INTO questions (`question`,`response_1`,`response_2`,`response_3`,`response_4`, `theme_id`, `corrected`)
         VALUES (
-          :question, :r1, :r2, :r3, r4, (SELECT id FROM themes WHERE themes.name = :theme), :correct
+          :question, :r1, :r2, :r3, :r4, (SELECT id FROM themes WHERE themes.name = :theme), :correct
         )",
         [
           "question" => $post['question'],
