@@ -21,4 +21,18 @@ class users {
       return 'no userId';
     }
   }
+
+  function changeData($userId, $data){
+    if (isset($data) && isset($userId)){
+      $request = new connectSQL;
+      $result = $request->execute("UPDATE users SET pseudo = :pseudo, email= :email, points=:points, picture_profile=:pp WHERE id = :userId",
+        [
+          "userId" => $userId['user'],
+          "pseudo" => $data['pseudo'],
+          "email" => $data['email'],
+          "points" => $data['points'],
+          "pp" => $data['pp'],
+        ]);
+    }
+  }
 }

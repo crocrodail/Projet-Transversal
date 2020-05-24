@@ -103,15 +103,20 @@ h2{
 .fa-edit{
     color: #FDA62E;
     font-size: 1.7vw;
-    padding-right: 10vw;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .account{
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
 }
+
+.account a{
+  margin-right: 10vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
 .account:nth-child(2n){
     background-color: white;
-}

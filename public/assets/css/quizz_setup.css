@@ -1,5 +1,6 @@
 html,
 body {
+    position: relative;
     font-family: Poppins;
     padding: 0;
     margin: 0;
@@ -7,20 +8,17 @@ body {
     height: 100%;
     width: 100%;
     background-color: #F5F5F5;
-}
-
-header {
-    width: 20%;
-    height: 150vw;
-    background-color: #5CD6EF;
-    float: left;
+    border-left: 10vw solid #5CD6EF;
 }
 
 ul {
+    position: fixed;
     list-style: none;
     margin: 0;
-    padding-left: 13vw;
-    padding-top: 50%;
+    padding: 0;
+    z-index: 99;
+    left: 10vw;
+    top: 10vw;
 }
 
 a {
@@ -28,6 +26,10 @@ a {
     color: white;
     font-weight: bold;
     font-size: 1.2vw;
+}
+
+form{
+  margin-top: 5vw
 }
 
 li {
@@ -67,13 +69,14 @@ li {
 
 h1 {
     color: #FDA62E;
-    text-align: center;
+    text-align: left;
     padding-top: 2vw;
+    margin-left: 2vw
 }
 
 h2 {
     color: #FDA62E;
-    padding-left: 23vw;
+    padding-left: 5vw;
     padding-top: 2vw;
 }
 
@@ -81,7 +84,7 @@ h2 {
     background-color: white;
     border-radius: 10px;
     width: 7vw;
-    margin-left: 22.5vw;
+    margin-left: 5vw;
 
 }
 
@@ -95,7 +98,7 @@ h2 {
 
 h3 {
     color: #FDA62E;
-    padding-left: 23vw;
+    padding-left: 3.5vw;
 }
 
 .question_name {
@@ -125,6 +128,15 @@ h3 {
     padding-left: 1vw;
     color: #364F6B;
 }
+.fa-plus {
+    font-size: 1.8vw;
+    padding-left: 1vw;
+    color: #364F6B;
+}
+
+.fa-plus:hover{
+  cursor: pointer;
+}
 
 .question {
     padding-top: 1vw;
@@ -152,9 +164,21 @@ h3 {
     border-radius: 10px;
 }
 
+.add:hover{
+  cursor: pointer;
+}
+.save:hover{
+  cursor: pointer;
+}
+
+button{
+  all: unset;
+}
+
 .button {
     float: right;
-    margin-right: 10vw;
+    margin-right: 25vw;
     width: 20vw;
     margin-top: 5vw;
+    padding-bottom: 5vw
 }
